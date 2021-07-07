@@ -93,15 +93,15 @@
     
     d. memperbaiki data user
  
-10. sassa
+10. Di bawah ini yang merupakan source code membuat table pada laravel adalah
     
-    a. 
+    a. $ php artisan make:table create_space_table --create=space
     
-    b. 
+    b. $ php artisan create:table --create=space
     
-    c. 
+    c. $ php artisan make:migration create_space_table --create=space
     
-    d. 
+    d. $ php artisan make:model(table)
 
 ## Membuat Halaman Index Space
 11. Fungsi Controller pada laravel adalah ?
@@ -142,4 +142,22 @@
     
     d. Auth::user()->revoke();
 
-14. 
+14. File tampilan halaman index.blade.php (halaman utama) terletak pada folder
+
+    **a. resource > views > pages > space**
+    
+    b. app > http > controllers
+    
+    c. routes
+    
+    d. resource > views > auth
+    
+15. Route pada laravel berfungsi sebagai
+    
+    **a. Penghubung antara user dengan keseluruhan framework**
+    
+    b. penghubung database dengan user
+    
+    c. menampilkan alamat web yang ingin dituju
+    
+    d. menyimpan database
