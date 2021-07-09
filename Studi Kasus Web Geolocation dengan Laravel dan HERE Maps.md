@@ -161,3 +161,18 @@
     c. menampilkan alamat web yang ingin dituju
     
     d. menyimpan database
+
+## Menambahkan Marker Map Dalam Create Space
+16. if(inputLat.value != '' && inputLng.value != '') 
+
+    script diatas merupakan kondisi jika
+    
+    a. inputan kosong
+    
+    b. inputan angka
+    
+    **c. inputan tidak kosong**
+    
+    d. inputan alamat tujuan
+
+17. 
