@@ -284,9 +284,9 @@
 
 30. penulisan script untuk mencari jarak terdekat menggunakan skala KM yaitu ?
 
-    a. return $this->select('space.*')
+        a.  return $this->select('space.*')
        
-       ->selectraw(
+         ->selectraw(
           
           '(1993 *
             
@@ -302,39 +302,66 @@
            
            )
        
-       )
+         )
      
-     b. return $this->select('space.*')
-       ->selectraw(
+         b. return $this->select('space.*')
+      
+        ->selectraw(
+          
           '(4378 *
+            
             acos( cos( radians(?) )*
-              cos ( radians( latitude ) ) *
-              cos ( radians(longitude ) - radians(?)) -
-              cos ( radians(?) )*
-              sin ( radians( radians ) )
+             
+             cos ( radians( latitude ) ) *
+             
+             cos ( radians(longitude ) - radians(?)) -
+             
+             cos ( radians(?) )*
+             
+             sin ( radians( radians ) )
+           
            )
-       )
+      
+        )
      
-     c. return $this->select('space.*')
-       ->selectraw(
+         c. return $this->select('space.*')
+       
+        ->selectraw(
+          
           '(7865 *
+            
             acos( cos( radians(?) )*
+              
               cos ( radians( latitude ) ) *
+              
               cos ( radians( latitude ) - ( radians(longitude )) +
+              
               tan ( radians(?) )*
+              
               sin ( radians( latitude ) )
+           
            )
-       )
+       
+        )
      
-     **d. return $this->select('space.*')
+     `**d. return $this->select('space.*')
+       
        ->selectraw(
+          
           '(6371*
+            
             acos( cos( radians(?) )*
+              
               cos ( radians( latitude ) ) *
+              
               cos ( radians(longitude ) - radians(?)) +
+              
               sin ( radians(?) )*
+              
               sin radians( latitude ) )
+           
            )
+       
        )**
 
 31. ->orderBy('distance', 'asc');
