@@ -285,14 +285,23 @@
 30. penulisan script untuk mencari jarak terdekat menggunakan skala KM yaitu ?
 
     a. return $this->select('space.*')
+       
        ->selectraw(
+          
           '(1993 *
+            
             acos( cos( radians(?) )*
+              
               cos ( radians( latitude ) ) *
+              
               cos ( radians(longitude ) - radians(?)) +
+              
               sin ( radians(?) )*
+              
               sin radians( latitude ) )
+           
            )
+       
        )
      
      b. return $this->select('space.*')
