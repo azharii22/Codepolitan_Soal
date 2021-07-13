@@ -175,4 +175,88 @@
     
     d. inputan alamat tujuan
 
-17. 
+17. kosong
+
+18. kosong
+
+19. kosong
+
+20. kosong
+
+## Menyimpan dataspace ke Database
+21. untuk melakukan request data user, script yang benar adalah
+
+    a. $request->user.data(request->all());
+    
+    b. $request->user(data.all());
+    
+    c. $request->user(all);
+    
+    **d. $request->user()->spaces()->create($rewuest->all());**
+
+22. return redirect()->route('space.index');
+
+    script diatas adalah perintah untuk melakukan ?
+    
+    a. menampilkan halaman space index
+    
+    **b. mengembalikan ke route space index**
+    
+    c. menampilkan database space index
+    
+    d. mengembalikan database space index
+
+23. JavaScript berfungsi untuk ?
+    
+    a. menampilkan perintah yang diinginkan
+    
+    **b. proses logika data**
+    
+    c. menyimpan data ke database
+    
+    d. membuat kolom input
+
+## Menampilkan Codespace dalam list
+24. @foreach pada laravel berfungsi untuk ?
+
+    a. isi dari parameter
+    
+    b. mengisi form
+    
+    **c. perulangan**
+    
+    d. memanggil data user
+
+25. script yang digunakan agar tombol berada di sebelah kanan adalah ?
+
+    **a. float-right**
+    
+    b. allow-right
+    
+    c. allign-right
+    
+    d. text-right
+
+26. <h6 class="card-subtittle">{{ $space->addres }}</h6>
+
+    script di atas berfungsi untuk ?
+    
+    a. menginput alamat pada kolom addres dengan ukuran font besar
+    
+    b. menampilkan alamat yang ingin dituju
+    
+    **c. memampilkan alamat yang sudah tersimpan di table space**
+    
+    d. menghapus alamat yang sudah tersimpan di database
+
+27. apa yang akan terjadi jika penulisan script seperti dibawah ini ?
+
+    <a href="#" class="card-link">Direction</a>
+    
+    **a. menampilkan tulisan Direction tetapi tidak bisa dibuka**
+    
+    b. menampilkan halaman Direction
+    
+    c. memanggil alamat yang ada pada Direction
+    
+    d. memanggil Direction
