@@ -344,9 +344,9 @@
        
         )
      
-     `**d. return $this->select('space.*')
+        **d. return $this->select('space.*')
        
-       ->selectraw(
+         ->selectraw(
           
           '(6371*
             
