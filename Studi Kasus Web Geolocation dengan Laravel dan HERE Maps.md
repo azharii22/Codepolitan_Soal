@@ -362,7 +362,7 @@
            
            )
        
-       )**
+         )**
 
 31. ->orderBy('distance', 'asc');
 
