@@ -260,3 +260,84 @@
     c. memanggil alamat yang ada pada Direction
     
     d. memanggil Direction
+
+## Membuat Haversine Formula di Laravel
+28. Haversine digunakan untuk ?
+    
+    **a. mencari jarak terdekat dari lokasi kita**
+    
+    b. mencari tujuan kita
+    
+    c. menampilkan padatnya lalu lintas jalan
+    
+    d. menampilkan rute pengguna mobil
+
+29. referensi website harvesine yang terdapat banyak bahasa pemrogramman adalah ?
+
+    a. petanikode.com
+    
+    **b. rosettacode.org**
+    
+    c. rottentomatoes.com
+    
+    d. glints.com
+
+30. penulisan script untuk mencari jarak terdekat menggunakan skala KM yaitu ?
+
+    a. return $this->select('space.*')
+       ->selectraw(
+          '(1993 *
+            acos( cos( radians(?) )*
+              cos ( radians( latitude ) ) *
+              cos ( radians(longitude ) - radians(?)) +
+              sin ( radians(?) )*
+              sin radians( latitude ) )
+           )
+       )
+     
+     b. return $this->select('space.*')
+       ->selectraw(
+          '(4378 *
+            acos( cos( radians(?) )*
+              cos ( radians( latitude ) ) *
+              cos ( radians(longitude ) - radians(?)) -
+              cos ( radians(?) )*
+              sin ( radians( radians ) )
+           )
+       )
+     
+     c. return $this->select('space.*')
+       ->selectraw(
+          '(7865 *
+            acos( cos( radians(?) )*
+              cos ( radians( latitude ) ) *
+              cos ( radians( latitude ) - ( radians(longitude )) +
+              tan ( radians(?) )*
+              sin ( radians( latitude ) )
+           )
+       )
+     
+     **d. return $this->select('space.*')
+       ->selectraw(
+          '(6371*
+            acos( cos( radians(?) )*
+              cos ( radians( latitude ) ) *
+              cos ( radians(longitude ) - radians(?)) +
+              sin ( radians(?) )*
+              sin radians( latitude ) )
+           )
+       )**
+
+31. ->orderBy('distance', 'asc');
+
+    penulisan script diatas digunakan untuk ?
+    
+    a. urutan jarak yang sama
+    
+    b. urutan jarak dari yang terjauh ke terdekat
+    
+    **c. urutan jarak dari yang terdekat ke terjauh**
+    
+    d. urutan jarak yang terjauh
+
+32. 
