@@ -237,7 +237,7 @@
     
     d. text-right
 
-26. <h6 class="card-subtittle">{{ $space->addres }}</h6>
+26. <h6 class==card-subtittle>{{ $space->addres }}</h6>
 
     script di atas berfungsi untuk ?
     
@@ -251,7 +251,7 @@
 
 27. apa yang akan terjadi jika penulisan script seperti dibawah ini ?
 
-    <a href="#" class="card-link">Direction</a>
+    <a href==# class==card-link>Direction</a>
     
     **a. menampilkan tulisan Direction tetapi tidak bisa dibuka**
     
