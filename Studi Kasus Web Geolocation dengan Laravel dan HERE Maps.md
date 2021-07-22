@@ -385,41 +385,41 @@
 
 33. penulisan script untuk mencari lokasi pada codespace yang benar adalah ?
     
-        **a. let spaces = []:
+    a. let spaces = []:
        
-        const fetchSpaces = function (latitude, longitude, radius) {
+       const fetchSpaces = function (latitude, longitude, radius) {
        
-        return new Promise(function (resolve, reject) {
+       return new Promise(function (resolve, reject) {
               
-              resolve(
+       resolve(
                  
-                 fetch('/api/spaces?lat=${latitude}&lng=${longitude)&rad=${radius}')
+       fetch('/api/spaces?lat=${latitude}&lng=${longitude)&rad=${radius}')
                   
-                  .then((res) => res.json())
+       .then((res) => res.json())
                   
-                  .then(function(data) {
+       .then(function(data) {
                       
-                      data.forEach(function (value, index) {
+       data.forEach(function (value, index) {
                          
-                         let marker = new H.map.marker({
+       let marker = new H.map.marker({
                             
-                            lat: value.latitude, lng: value.longitude
+       lat: value.latitude, lng: value.longitude
                          
-                         });
+       });
                           
-                          spaces.push(marker);
+       spaces.push(marker);
                          
-                         })
+       })
                       
-                      })
+       })
                        
-                    )
+       )
                      
-                  })
+       })
                     
-                 }
+       }
                     
-               })**
+       })**
 
 
         b. let spaces = []:
@@ -638,21 +638,21 @@
     
     d. lineRoute
 
-    46. map.getViewModel().setLookAtData({
+  46. map.getViewModel().setLookAtData({
         
         bounds: polyline.getBoundingBox()
     
     });
     
-    script diatas berfungsi untuk ?
+   script diatas berfungsi untuk ?
     
-    a. menampilkan maps yang kita tuju
+   a. menampilkan maps yang kita tuju
     
-    b. fitur pencarian lokasi
+   b. fitur pencarian lokasi
     
-    **c. fitur zoom in dan zoom out pada maps
+   **c. fitur zoom in dan zoom out pada maps
     
-    d. lokasi kita saat ini
+   d. lokasi kita saat ini
 
 47. <li>Travel Time: ${sunmary.travelTime.toMMS()} (in cureent traffic)</li>
     
