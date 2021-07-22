@@ -376,4 +376,333 @@
     
     d. urutan jarak yang terjauh
 
-32. 
+## Menampilkan Codespace di Here Maps
+32. untuk menampilkan halaman codespace di here maps, yang perlu kita lakukan adalah ?
+    a. membuat data base
+    **b. membuat script layout codespace**
+    c. membuat folder codespace
+    d. membuat model codespace
+
+33. penulisan script untuk mencari lokasi pada codespace yang benar adalah ?
+    
+        **a. let spaces = []:
+       
+        const fetchSpaces = function (latitude, longitude, radius) {
+       
+        return new Promise(function (resolve, reject) {
+              
+              resolve(
+                 
+                 fetch('/api/spaces?lat=${latitude}&lng=${longitude)&rad=${radius}')
+                  
+                  .then((res) => res.json())
+                  
+                  .then(function(data) {
+                      
+                      data.forEach(function (value, index) {
+                         
+                         let marker = new H.map.marker({
+                            
+                            lat: value.latitude, lng: value.longitude
+                         
+                         });
+                          
+                          spaces.push(marker);
+                         
+                         })
+                      
+                      })
+                       
+                    )
+                     
+                  })
+                    
+                 }
+                    
+               })**
+
+
+        b. let spaces = []:
+       
+        const fetchSpaces = function (latitude, longitude, radius) {
+       
+        return new Promise(function (resolve, reject) {
+              
+              resolve(
+                 
+                 fetch('/api/spaces?lat=${latitude}&lng=${longitude)&rad=${radius}')
+                  
+                  .then((res) => res.json())
+                  
+                  .then(function(data) {
+                      
+                      data.forEach(function (value, index) {
+                         
+                         let marker = new H.map.marker({
+                            
+                            lat: value.latitude, lng: value.longitude
+                         
+                         });
+                          
+                          search.push(marker);
+                         
+                         })
+                      
+                      })
+                       
+                    )
+                     
+                  })
+                    
+                 }
+                    
+               })
+               
+               c. let spaces = []:
+       
+        const fetchSpaces = function (radius) {
+       
+        return new Promise(function (resolve, reject) {
+              
+              resolve(
+                 
+                 fetch('/api/spaces?lat=${latitude}&lng=${longitude)&rad=${radius}')
+                  
+                  .then((res) => res.json())
+                  
+                  .then(function(data) {
+                      
+                      data.forEach(function (radius, index) {
+                         
+                         let marker = new H.map.marker({
+                            
+                            lat: value.latitude, lng: value.longitude
+                         
+                         });
+                          
+                          spaces.push(marker);
+                         
+                         })
+                      
+                      })
+                       
+                    )
+                     
+                  })
+                    
+                 }
+                    
+               })
+               
+               d. let spaces = []:
+       
+        const fetchSpaces = function (latitude, longitude) {
+       
+        return new Promise(function (resolve, reject) {
+              
+              resolve(
+                 
+                 fetch('/api/spaces?lat=${latitude}&lng=${longitude)')
+                  
+                  .then((res) => res.json())
+                  
+                  .then(function(data) {
+                      
+                      data.forEach(function (value, index) {
+                         
+                         let marker = new H.map.marker({
+                            
+                            lat: value.latitude, lng: value.longitude
+                         
+                         });
+                          
+                          spaces.push(marker);
+                         
+                         })
+                      
+                      })
+                       
+                    )
+                     
+                  })
+                    
+                 }
+                    
+               })
+               
+        34. function clearSpace() {
+        
+        map.removeObjects(spaces);
+        
+        spaces = [];
+     
+        }
+      
+      fungsi diatas digunakan untuk ?
+      
+      a. menghapus spaces
+      
+      b. memindahkan object maps
+      
+      **c. menghapus object maps dan memindahkan ke titik yang baru**
+      
+      d. mengosongkan space
+     
+35. if (window.action == 'browse') adalah kondisi jika ?
+
+    a. menghapus lokasi
+    
+    b. menambahkan lokasi
+    
+    c. memperbaru lokasi
+    
+    **d. mencari lokasi**
+
+## Mengubah data Codespace
+36. dimanakah letak script untuk membuat fungsi edit ?
+    a. Model
+    
+    b. View
+    
+    **c. Controller**
+    
+    d. API
+
+37. $space = Space::findOrFail($id);
+    
+    jika kondisi diatas error, maka apa yang terjadi ?
+    
+    a. menampilkan halaman utama
+    
+    **b. menampilkan 404**
+    
+    c. reload secara terus menerus
+    
+    d. tidak terjadi apa-apa
+
+38. if ($space->user_id != request()->user()->id)
+    
+    kondisi diatas merupakan proses validasi berdasarkan ?
+    
+    **a. id dari user**
+    
+    b. username
+    
+    c. nomor hp user
+    
+    d. permintaan user
+
+## Menghapus data codespace
+39. @csrf @method('DELETE')
+    
+    method diatas digunakan untuk ?
+    
+    a. Tambah
+    
+    b. Edit
+    
+    **c. Hapus**
+    
+    d. Update
+
+40. sebelum menghapus data, ada baiknya sistem melakukan konfirmasi kepada pengguna guna memastikan data yang dipilih untuk dihapus. penulisan script untuk mengkonfirmasi tersebut adalah ?
+    
+    **a. onClick="return confirm('are you sure?');">Delete</button>**
+    
+    b. onClick="return validation('are you sure?');">Delete</button>
+    
+    c. onClick="view confirm('are you sure?');">Delete</button>
+    
+    d. onClick="return validation('are you sure?');">Delete</button>
+
+41. method yang digunakan dalam fungsi delete adalah ?
+    
+    a. GET
+    
+    **b. POST**
+    
+## Membuat Tampilan Route Codespace
+42. aa
+
+43. aa
+
+44. aa
+
+## Menampilkan Route Codespace di Here Maps
+45. dalam laravel, garis rute pada maps disebut juga dengan ?
+    a. lineAddres
+    
+    **b. lineString**
+    
+    c. lineStreet
+    
+    d. lineRoute
+
+    46. map.getViewModel().setLookAtData({
+        
+        bounds: polyline.getBoundingBox()
+    
+    });
+    
+    script diatas berfungsi untuk ?
+    
+    a. menampilkan maps yang kita tuju
+    
+    b. fitur pencarian lokasi
+    
+    **c. fitur zoom in dan zoom out pada maps
+    
+    d. lokasi kita saat ini
+
+47. <li>Travel Time: ${sunmary.travelTime.toMMS()} (in cureent traffic)</li>
+    
+    script diatas berfungsi untuk ?
+    
+    **a. menghitung waktu jarak tempuh sesuai keadaan lalu lintas**
+    
+    b. mengetahui waktu jarak tempuh
+    
+    c. menghitung waktu jarak tempuh hanya pada saat lalu lintas padat
+    
+    d. menghitung waktu jarak tempuh hanya pada saat lalu lintas lancar
+
+## Membuat Multiple Input Photo
+48. class yang berfungsi agar kita bisa mengupload banyak foto adalah ?
+    
+    a. class form-group input
+    
+    b. class form-group
+    
+    **c. class form-group increment**
+    
+    d. class form-group photo
+
+49. name"photo[]" script disamping memiliki makna ?
+    
+    a. nama photo yang diakhiri dengan kurung siku
+    
+    **b. nama photo dengan tipe data array**
+    
+    c. nama photo
+    
+    d. nama photo dengan parameter kosong
+
+50. class clone invisible berfungsi untuk ?
+    
+    a. membuat table
+    
+    b. group
+    
+    **c. tidak terlihat**
+    
+    d. menampilkan halaman utama
+    
+51. input type="file" artinya adalah
+    
+    a. inputan berupa pdf
+    
+    b. inputan berupa jpg/jpeg/png karena digunakan untuk foto
+    
+    c. inptan berupa 
+    
+    **d. inputan berupa file**
