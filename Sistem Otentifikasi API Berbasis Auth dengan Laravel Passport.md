@@ -11,7 +11,7 @@
   
 2. salah satu proyek laravel yang dikembangkan untuk melakukan otentikasi berbasis token adalah ?
    
-   a. **Passport**
+   **a. Passport**
    
    b. API
    
@@ -230,3 +230,211 @@
        Post(import)
        
        };
+       
+## Membuat API Endpoint Create Data
+18. Method store pada tweetConttroller berfungsi untuk ?
+    
+    a. memanggil database
+    
+    **b. menampilkan sesuai request**
+    
+    c. verifikasi data user
+    
+    d. membuat kolom baru
+
+19. apakah Tipe data Json pada laravel otomatis terbuat ?
+    
+    **a. Ya**
+    
+    b. Tidak
+
+20. keunggulan dari method axios adalah ?
+    
+    a. script yang mudah diingat
+    
+    b. dapat melakukan verifikasi data secara otomatis
+    
+    **c. mendukung async dan awai untuk kode yang asinkronus**
+    
+    d. karena didukung oleh JSon
+    
+21. props: {
+         
+       twweets: Array
+    
+    }
+    
+    tipe data diatas adalah ?
+    
+    a. String
+    
+    **b. Array**
+    
+    c. Integer
+    
+    d. text
+
+22. pada method form action digunakan untuk submit, akan tetapi submit tersebut dicegah lalu diarah kepada method post axios. dari logika tersebut, bagaimanakah penulisan source code nya ?
+    
+    **a. form action="#" @submit.prevent="post">**
+    
+    b. form action="#" @submit.post>
+    
+    c. form action="post" @submit>
+    
+    d. form action="prevent" @submit="post">
+
+## Installasi Laravel Passport
+23. untuk menginstall passport pada laravel kita dapat menggunakan ?
+    
+    a. text editor
+    
+    b. xampp
+    
+    c. kali linux 
+    
+    **d. composser**
+
+24. untuk menambahkan tabel yang tersedia pada laravel passport, perintah yang kita lakukan di command prompt yaitu ?
+
+    a. php artisan tabel
+    
+    b. php artisan serve
+    
+    **c. php artisan migrate**
+    
+    d. php artisan colom
+
+25. php artisan passport::install
+
+    perintah diatas digunakan untuk menginstall laravel passport. hal ini digunakan untuk ?
+    
+    **a. generate encryption keys agar akses token aman**
+    
+    b. agar passport laravel bisa berjalan
+    
+    c. generate encryption keys agar akses token terdaftar
+    
+    d. generate encryption keys agar akses token bisa login
+    
+
+26. agar dapat menggunakan laravel passport pada model user, kita perlu menambahkan ?
+    
+    a. API Endpoint
+    
+    b. HasApiEndpoint
+    
+    c. API Token
+    
+    **d. HasApiTokens**
+
+## Menggunakan Vue Component dari Laravel Passport
+27. Use Laravel\Passport\Passport;
+
+    fungsi scrypt diatas adalah ?
+    
+    a. menggunakan laravel passport
+    
+    **b. mengimport laravel passport**
+    
+    c. mengekspor laravel passport
+    
+    d. generate laravel passport
+
+28. perintah yang dijalankan pada command prompt agar kita dapat melihat daftar route adalah ?
+
+    a. php artisan view::route
+    
+    b. php route::list
+    
+    **c. php artisan route::list**
+    
+    d. php laravel route::list\
+
+29. setelah melakukan generate passport componen, kita perlu melakukan registrasi component-component tersebut. dimana registrasi component-component dilakukan ?
+
+    a. laravel.com
+    
+    b. folder component
+    
+    **c. folder app.js**
+    
+    d. google.com
+
+30. perbedaan method post dan get pada route adalah ?
+
+    **a. Method POST data dikirimkan tidak melalui url parameter namun melalui form sedangkan GET melakukan parsing data melalui url parameter.**
+    
+    b. method post 
+    
+    c. 
+    
+    d. 
+
+## Menguji Personal Token Laravel Passport
+31. untuk melakukan pengujian, kita dapat menggunakan
+    
+    a. visual studio code
+    
+    b. sublime text
+    
+    c. xampp
+    
+    **d. postman**
+
+32. token yang dihasilkan pada laravel yaitu melalui ?
+
+    a. route
+    
+    b. controller
+    
+    **c. passport**
+    
+    d. post
+
+33. untuk mendapatkan data user yang sedang login, kita perlu melakukan key dan value yang berisi ?
+
+    a. key = auth dan value = bearer
+    
+    **b. key = authorization dan value = bearer (lalu paste value user)**
+    
+    c. key = authorization dan value = bearer
+    
+    d. key = auth dan value = bearer (lalu paste data user)
+
+34. untuk menampilkan data user dari database berdasarkan id user yang terbesar, maka penulisan scrypt nya adalah ?
+
+    **a. public function scopeLatestFirst($querry)**
+    
+       **{**
+            
+       **return $querry->orderBy('created_at', 'desc'**
+            
+       **}**
+       
+     b. public function scopeLatestFirst($querry)
+    
+       {
+            
+       return $querry->orderBy('created_at', 'asc'
+            
+       }
+       
+     c. public function scopeLatestFirst($querry)
+    
+       {
+            
+       return $querry->orderBy('created_at', '>1'
+            
+       }
+       
+     d. public function scopeLatestFirst($querry)
+    
+       {
+            
+       return $querry->orderBy('created_at', 'id_user'
+            
+       } 
+
+## Persiapan Passclient Project
+35. 
