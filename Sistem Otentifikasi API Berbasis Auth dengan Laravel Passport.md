@@ -520,10 +520,10 @@
 
 42. penulisan nilai balik agar authorize ini dapat berjalan yaitu ?
 
-    a. return redirect('http://passport.test/oauth/authorize?' , $querry');
+    a. return redirect('http://passport.test/auth/authorize?' , $querry');
     
     b. return redirect('http://passport.test/oauth/authorize?' , $querry');
     
-    c. return redirect('http://passport.test/oauth/authorize?' , $querry');
+    c. return redirect('http://passport.test/authorize?' , $querry');
     
     **d. return redirect('http://passport.test/oauth/authorize?' , $querry');**
