@@ -437,4 +437,93 @@
        } 
 
 ## Persiapan Passclient Project
-35. 
+35. untuk membuat auth scaffolding kita perlu melakukan ?
+
+    a. mengistall laravel scaffolding
+    
+    b. membuat scaffolding
+    
+    c. menginstall laravel ux
+    
+    **d. mengistall laravel ui**
+
+36. laravel ui yang digunakan pada passclient project ini yaitu ?
+
+    a. laravel ui json
+    
+    **b. laravel ui vue**
+    
+    c. laravel ui php
+    
+    d. laravel ui route
+    
+37. scrypt untuk memberitahukan bahwa user id sebagai foreign key yaitu ?
+
+    a. $table->foreign('user_id')->references('users')->on('id')->onDelete('cascade');   
+    
+    b. $table->foreign('user_id')->references('users')->on('table_id')->onDelete('cascade');
+    
+    **c. $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');**
+    
+    d. $table->foreign('user_id')->references('user')->on('id')->onDelete('cascade');
+
+         38. public function token()
+    
+            {
+         
+                  return $this->hasOne(Token::class, 'user_id', 'id')
+     
+            }
+            
+       maksud dari penulisan scrypt diatas adalah ?
+       
+       **a. relasi has one**
+       
+       b. mendapatkan user id
+       
+       c. memanggil id
+       
+       d. relasi database
+
+## Membuat Request Authorize pada Laravel Passport
+39. langkah pertama untuk request authorize ini adalah ?
+
+    a. memanggil user id
+    
+    b. memanggil controller
+    
+    **c. membuat data client**
+    
+    d. membuat package baru
+
+40. secret key pada authorize ini berfungsi untuk ?
+
+    a. membuat scaffolding
+    
+    b. kode rahasia pengguna ketika login
+    
+    c. mendapatkan user id
+    
+    **d. membuat permintaan ke API**
+
+41. Route::get('/auth/passport', 'Auth\OauthController@callBack');
+
+    maksud dari method callback adalah ?
+    
+    a. panggilan balik sesuai request dari user
+    
+    **b. akan dijalanlan pada saat authorize di secret key berhasil**
+    
+    c. mendapatkan method post melalui form url
+    
+    d. mengirimkan data langsung ke action
+
+42. penulisan nilai balik agar authorize ini dapat berjalan yaitu ?
+
+    a. return redirect('http://passport.test/oauth/authorize?' , $querry');
+    
+    b. return redirect('http://passport.test/oauth/authorize?' , $querry');
+    
+    c. return redirect('http://passport.test/oauth/authorize?' , $querry');
+    
+    **d. return redirect('http://passport.test/oauth/authorize?' , $querry');**
