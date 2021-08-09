@@ -74,7 +74,9 @@
    
 ## Membuat Timeline Component
 8. Apakah ExampleComponent.vu pada laravel sudah terpasang otomatis ketika kita menginstall laravel ?
+   
    a. Ya
+   
    **b. Tidak**
 
        9.  <template>
@@ -527,3 +529,343 @@
     c. return redirect('http://passport.test/authorize?' , $querry');
     
     **d. return redirect('http://passport.test/oauth/authorize?' , $querry');**
+
+## Membuat Fungsi Callback dan Menyimpan Token
+43. source code untuk method callback adalah ?
+
+    **a. public function callback(Request $request)**
+       
+       **{**
+       
+       **dd($request)**
+       
+       **$this->client->post('http:://passport.test/oauth/token', [
+       
+       **'form_params' => [
+       
+       **'grant_type => 'authorization_code',**
+       
+       **'client_id' => '3',**
+       
+       **'client_secret' => '**pada bagian ini diisi secret key user**',**
+       
+       **'redirect_url' => http::/passCLient.test/auth/passport/callback',**
+       
+       **'code' => $request->code,**
+       
+       **]**
+       
+       **]);**
+       
+       **}**
+       
+    b. public function callback(Request $request)
+       
+       {
+       
+       $this->client->post('http:://passport.test/oauth/token', [
+       
+       'form_params' => [
+       
+       'grant_type => 'authorization_code',
+       
+       'client_id' => '3',
+       
+       'client_secret' => '**pada bagian ini diisi secret key user**',
+       
+       'redirect_url' => http::/passCLient.test/auth/passport/callback',
+       
+       'code' => $request->code,
+       
+       ]
+       
+       ]);
+       
+       }
+       
+    c. public function callback(Request $request)
+       
+       {
+       
+       dd($request)
+       
+       $this->client->post('http:://passport.test/oauth/token', [
+       
+       'grant_type => 'authorization_code',
+       
+       'client_id' => '3',
+       
+       'client_secret' => '**pada bagian ini diisi secret key user**',
+       
+       'redirect_url' => http::/passCLient.test/auth/passport/callback',
+       
+       'code' => $request->code,
+       
+       ]);
+       
+       }
+       
+    d. public function callback($request)
+       
+       {
+       
+       dd($request)
+       
+       $this->client->post('http:://passport.test/oauth/token', [
+       
+       'form_params' => [
+       
+       'grant_type => 'authorization_code',
+       
+       'client_id' => '3',
+       
+       'client_secret' => '**pada bagian ini diisi secret key user**',
+       
+       'redirect_url' => http::/passCLient.test/auth/passport/callback',
+       
+       'code' => $request->code,
+       
+       ]
+       
+       ]);
+       
+       }
+
+44. Method Guzzle pada fungsi callback ini adalah >
+
+    a. Method data yang dikirimkan tidak melalui url parameter namun melalui form
+    
+    b. Method anggilan balik sesuai request dari user
+    
+    c. Method yang akan dijalanlan pada saat authorize di secret key berhasil
+    
+    **d. package composer yang berisi segala function untuk melakukan request api**
+
+45. source code untuk mengubah nilai response dari post method callback ke json adalah ?
+
+    a. $response = json_decode($response->);
+    
+    **b. $response = json_decode($response->getBody());**
+    
+    c. $response = json_decode($response());
+    
+    d. $response = json($response->getBody());
+
+46. $request->user()->token()->create([
+
+    'access_token' => $response->access_token
+    
+    ]);
+    
+    maksud dari source code diatas adalah ?
+    
+    **a. nilai response yang akan disimpan ke dalam tabel token**
+    
+    b. membuat nilai respon pada tabel token
+    
+    c. mengakses token pada nilai respon
+    
+    d. nilai response yang diakses melalui token
+
+47. untuk menampilkan seluruh data tweets, kita perlu melakukan ?
+
+    a. meminta akses pada admin
+    
+    **b. request pada API Endpoint**
+    
+    c. membuka database
+    
+    d. membuka halaman pencarian
+
+48. source code untuk menampilkan data tweets pada method index di homeController adalah ?
+
+    **a. public function index(Request $request)**
+       
+       **{**
+       
+       **$tweets = collect();**
+       
+       **if ($request->()->token) {**
+       
+       **$response = $this->client->get('http://passport.test/api/tweets' , [**
+       
+       **'headers' => [**
+       
+       **'Accept' => 'application/json',**
+       
+       **'Authrization' => 'Bearer' , . $request->user()->token->access_token**
+       
+       **]**
+       
+       **]);**
+       
+       **$tweets = collect (json_decode($response->getBody()));**
+       
+       **}**
+       
+       **return view('home')->with([**
+       
+       **'tweets' => $tweets**
+       
+       **]);**
+       
+       **}**
+       
+    b. public function index(Request $request)
+       
+       {
+       
+       $tweets = collect();
+       
+       if ($request->()->token) {
+       
+       $response = $this->client->get('http://passport.test/api/tweets' , [
+       
+       'headers' => [
+       
+       'Accept' => 'json_decode',
+       
+       'Authrization' => 'Bearer' , . $request->user()->token->access_token
+       
+       ]
+       
+       ]);
+       
+       $tweets = collect (json_decode($response->getBody()));
+       
+       }
+       
+       return view('home')->with([
+       
+       'tweets' => $tweets
+       
+       ]);
+       
+       }
+       
+    c. public function index(Request $request)
+       
+       $tweets = collect();
+       
+       if ($request->()->token) {
+       
+       $response = $this->client->get('http://passport.test/api/tweets' , [
+       
+       'headers' => [
+       
+       'Accept' => 'application/json',
+       
+       'Authrization' => 'Bearer' , . $request->user()->token->access_token
+       
+       ]
+       
+       ]);
+       
+       $tweets = collect (json_decode($response->getBody()));
+       
+       }
+       
+       return view('home')->with([
+       
+       'tweets' => $tweets
+       
+       ]);
+       
+    d. public function index(Request $request)
+       
+       {
+       
+       
+       $tweets = collect();
+       
+       if ($request->()->token) {
+       
+       $response = $this->client->get('http://passport.test/api/tweets' , [
+       
+       'headers' => [
+       
+       'Accept' => 'application/json',
+       
+       'Authrization' => 'Bearer' , . $request->user()->token->access_token
+       
+       ]
+       
+       ]);
+       
+       $tweets = collect (application/json($response->getBody()));
+       
+       }
+       
+       return view('home')->with([
+       
+       'tweets' => $tweets
+       
+       ]);
+       
+       }
+
+49. @if (Auth::user()->token)
+
+    @if ($tweets->count())
+    
+    @foreach ($tweets as $tweets)
+    
+    <div class = "media mb-3">
+   
+    <img class = "mr-3" src="https://placehold.it/64x64" alt="Generic placeholder image">
+   
+    <div class = "media-body">
+       
+    <h5 class = "at-0">{{ $tweet->user->name }}</h5>
+     
+    {{ $tweet->body }}
+    
+    </div>
+   
+    </div>
+   
+    @endforeach
+   
+    @endif
+   
+    @else
+   
+    <p>Please <a href="{{ url('/auth/passport') }}" >authorize with Passport</a></p>
+   
+    @endif
+    
+    source code diatas merupakan ?
+    
+    a. perulangan
+    
+    b. tambah data
+    
+    **c. verifikasi**
+    
+    d. input data
+
+50. kondisi yang salah maka akan diarahkan untuk mengisi passport, maka penulisan source code nya adalah ?
+
+    **a. @else**
+   
+       <p>Please <a href="{{ url('/auth/passport') }}" >authorize with Passport</a></p>
+   
+       **@endif**
+    
+    b. @else
+   
+       <p> Please <a href="{{ url('/login') }}" >authorize with Passport</a></p>
+   
+       @endif
+    
+    c. @else
+   
+       <p>Please <a href="{{ url('/register') }}" >authorize with Passport</a></p>
+   
+       @endif
+    
+    d. @else
+   
+       <p>Please <a href=" url('/auth/passport') " >authorize with Passport</a></p>
+   
+       @endif
