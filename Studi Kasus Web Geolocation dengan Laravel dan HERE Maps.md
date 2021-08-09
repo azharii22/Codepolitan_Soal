@@ -993,4 +993,44 @@
     
     d. public
     
-57.     
+57. Method apa yang digunakan untuk menghapus foto ?
+
+    a. photo
+
+    **b. destroy**
+
+    c. add
+
+    d. public  
+    
+58. untuk menampilkan foto yang bersifat carousel, kita dapat mengambil source code pada ?
+
+    a. xampp.php
+    
+    **b. getbootstrap.com**
+    
+    c. phplaravel.com
+    
+    d. html.com
+
+59. key == 0 ? 'active' : ' ' ">
+
+    logika dari scrypt diatas adalah ?
+    
+    **a. jika key bernilai 0 maka akan menampilkan class active**
+    
+    b. jika key bernilai lebih dari 0 maka akan menampilkan class active
+    
+    c. jika key bernilai 0 maka akan menampilkan tanda petik dua
+    
+    d. jika key bernilai active maka akan menampilkan halaman login
+    
+60. semua fungsi yang terdapat pada laravel ada di folder ?
+
+    a. model
+    
+    b. view
+    
+    **c. controller**
+    
+    d. database
