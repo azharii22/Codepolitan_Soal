@@ -706,3 +706,110 @@
     c. inptan berupa 
     
     **d. inputan berupa file**
+
+## Membuat Fungsi Upload dan Delete File
+52. untuk mengupload foto yang lebih dari 1 dan bentuknya fotonya itu berbeda, bagaimanakah penulisan scrypt nya ?
+
+    **a. 'photo' => ['required'],**
+       
+       **'photo' => ['mimes:jpg,png']**
+
+      b. 'photo' => ['required'],
+       
+       'photo' => ['mimes jpg,png']
+       
+       c. 'photo' => ['required'],
+       
+       'photo' => ['jpeg,jpg,png,pdf']
+       
+       d. 'photo' => ['required'],
+       
+       'photo' => ['mimes:jpg,png,pdf']
+
+53. putFile('spaces', $file);
+
+    penjelesan sederhana dari kutipan scrypt diatas adalah ?
+    
+    a. proses input file yang mana spaces berfungsi untuk tombol submit dan $file berfungsi menyimpan gambar yang kita upload
+    
+    b. proses input file yang mana spaces berfungsi untuk menyimpan foto yang kita upload dan $file berfungsi untuk lokasi foto yang ingin kita upload
+    
+    c. proses input file yang mana spaces berfungsi untuk kolom kecil yang menampilkan gambar dan $file berfungsi untuk mengetahui lokasi pemnyimpnan gambar
+    
+    **d. proses input file yang mana spaces berfungsi untuk lokasi foto yang ingin kita upload dan $file berfungsi untuk menyimpan foto yang kita upload**
+
+54. agar folder storage->public dapat digunakan pada teritori public, maka perintah apa yang kita jalankan ?
+    
+    a. artisan storage controller
+    
+    **b. artisan storage link**
+    
+    c. artisan storage serve
+    
+    d. artisan storage public
+
+55. ketika kita mengupload gambar kosong maka akan menampilkan pesan error. penulisan scrypt dari logika disamping yaitu >
+
+    a. @if ($errors->has('photo'))
+    
+      <ul class=photo>
+  
+      @foreach($errors->get('photo') as $ error)
+  
+      <li>{{ $error }}</li>
+  
+      @endforeach
+      
+      </ul>
+      
+      @endif
+   
+    b. @if ($errors->has('photo'))
+    
+      <ul class=($errors->get('photo') as $ error)>
+  
+      <li>{{ $error }}</li>
+  
+      @endforeach
+      
+      </ul>
+      
+      @endif
+      
+    c. @if ($errors->has('photo'))
+  
+      @foreach($errors->get('photo') as $ error)
+  
+      <li>{{ $error }}</li>
+  
+      @endforeach
+      
+      </ul>
+      
+      @endif   
+      
+    **d. @if ($errors->has('photo'))**
+    
+      **<ul class="alert alert-danger">**
+  
+      **@foreach($errors->get('photo') as $ error)**
+  
+      **<li>{{ $error }}</li>**
+  
+      **@endforeach**
+      
+      **</ul>**
+      
+      **@endif**   
+
+56. Method apa yang digunakan untuk menghapus foto ?
+
+    a. photo
+    
+    **b. destroy**
+    
+    c. add
+    
+    d. public
+    
+57.     
