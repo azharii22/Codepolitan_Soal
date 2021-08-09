@@ -175,13 +175,154 @@
     
     d. inputan alamat tujuan
 
-17. kosong
+17. Source code untuk menambahkan element id pada inputan adalah
 
-18. kosong
+    a. 
+    ```
+    {!! Form::text('latitude', null, ['class' => $error->has('latitude') ? 'form-control 
+        is-invalid' : form-control, 'id' : 'lat' ]) !!}
+    ```
 
-19. kosong
+    b.
+    ```
+    {!! Form::text('latitude', null, ['class' => $error->has('latitude') ? 'form-control 
+        is-invalid' : form-control, 'id' = 'lat' ]) !!}
+    ```
 
-20. kosong
+    **c.** 
+    ```
+    {!! Form::text('latitude', null, ['class' => $error->has('latitude') ? 'form-control 
+        
+        is-invalid' : form-control, 'id' => 'lat' ]) !!}
+    ```
+    **
+
+    d.
+    ```
+    {!! Form::text('latitude', null, ['class' => $error->has('latitude') ? 'form-control 
+        is-invalid' : form-control, 'id'('lat') ]) !!}
+    ```
+
+18. Source code untuk membuat marker adalah
+    
+    **a.**
+    ```
+    let marker = new H.map.Marker(objectLocalCoord, {
+        volatility: true
+    })
+
+    marker.draggable = true;
+    map.addObject(marker);
+    ```
+    **
+
+    b.
+    ```
+    let marker = new H.map.Marker(objectLocalCoord, {
+        volatility: false
+    })
+
+    marker.draggable = true;
+    map.addObject(marker);
+    ```
+
+    c.
+    ```
+    let marker = new H.map.Marker(objectLocalCoord, {
+        volatility: true
+    })
+
+    marker.draggable = false;
+    map.addObject(marker);
+    ```
+
+    d.
+    ```
+    let marker = new H.map.Marker(objectLocalCoord, {
+        volatility: false
+    })
+
+    marker.draggable = false;
+    map.addObject(marker);
+    ```
+
+
+19. Apa yang perlu kita tambahkan agar saat menggeserkan/memindahkan marker, map nya tidak berpindah pindah adalah
+    
+    a. Membuat behavior baru
+
+    b. membuat fungsi baru
+
+    c. membuat objek baru
+
+    **d. membuat eventListener**
+
+20. Source code untuk mendapatkan latitude dan longitude pada saat kita selesai menggeserkar marker adalah..
+
+    a.
+    ```
+    map.addEventListener('dragend', function(ev) {
+        let target = ev.target;
+        if(target instanceof H.map.Marker) {
+            behavior.false();
+            let resultCoord = map.screenToGeo(
+                ev.currentPointer.viewportX,
+                ev.currentPointer.viewportY,
+            );
+            inputLat.value = resultCoord.lat;
+            inputLng.value = resultCoord.lng;
+        }
+    }, false);
+    ```
+
+    b.
+    ```
+    map.addEventListener('dragend', function(ev) {
+        let target = ev.target;
+        if(target instanceof H.map.Marker) {
+            behavior.false();
+            let resultCoord = map.screenToGeo(
+                ev.currentPointer.viewportX,
+                ev.currentPointer.viewportY,
+            );
+            inputLat = resultCoord.lat;
+            inputLng = resultCoord.lng;
+        }
+    }, false);
+    ```
+
+    **c.**
+    ```
+    map.addEventListener('dragend', function(ev) {
+        let target = ev.target;
+        if(target instanceof H.map.Marker) {
+            behavior.enable();
+            let resultCoord = map.screenToGeo(
+                ev.currentPointer.viewportX,
+                ev.currentPointer.viewportY,
+            );
+            inputLat.value = resultCoord.lat;
+            inputLng.value = resultCoord.lng;
+        }
+    }, false);
+    ```
+    **
+
+    d.
+    ```
+    map.addEventListener('dragend', function(ev) {
+        let target = ev.target;
+        if(target instanceof H.map.Marker) {
+            behavior.enable();
+            let resultCoord = map.screenToGeo(
+                ev.currentPointer.viewportX,
+                ev.currentPointer.viewportY,
+            );
+            inputLat = resultCoord.lat;
+            inputLng = resultCoord.lng;
+        }
+    }, false);
+    ```
 
 ## Menyimpan dataspace ke Database
 21. untuk melakukan request data user, script yang benar adalah
@@ -622,11 +763,51 @@
     **b. POST**
     
 ## Membuat Tampilan Route Codespace
-42. aa
+42. event onclick biasanya terletak pada ?
 
-43. aa
+    **a. tombol submit**
+    
+    b. tombol login
+    
+    c. tombol register
+    
+    d. tombol logout
 
-44. aa
+43. source code untuk open url direction adalah ?
+
+    a. function openDirection(lat, lng) {
+       
+       window.open('/space/${id}?from={objLocalCoord, latitude}, ${objLocalCoord, longitude}&to={lat}, ${lng}', "self");
+       
+       }
+       
+    b. function openDirection(lat, lng, id) {
+       
+       window.open('/space/${id}?from={latitude}, ${longitude}&to={lat}, ${lng}', "self");
+       
+       }
+       
+    c. function openDirection(lat, lng, id) {
+       
+       window.open('/space/${id}?from={objLocalCoord}, ${objLocalCoord, longitude}&to={lat}, ${lng}', "self");
+       
+       }
+       
+    **d. function openDirection(lat, lng, id) {**
+       
+       **window.open('/space/${id}?from={objLocalCoord, latitude}, ${objLocalCoord, longitude}&to={lat}, ${lng}', "self");**
+       
+       **}**   
+
+44. semua peran fungsi pada laravel terdapat pada ?
+
+    a. model
+    
+    b. view
+    
+    **c. controller**
+    
+    d. database
 
 ## Menampilkan Route Codespace di Here Maps
 45. dalam laravel, garis rute pada maps disebut juga dengan ?
