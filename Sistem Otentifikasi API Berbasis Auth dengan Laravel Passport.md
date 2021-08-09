@@ -667,6 +667,7 @@
     
     d. nilai response yang diakses melalui token
 
+## Menggunakan Token yang Disimpan
 47. untuk menampilkan seluruh data tweets, kita perlu melakukan ?
 
     a. meminta akses pada admin
