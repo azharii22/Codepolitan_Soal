@@ -29,7 +29,7 @@
  
     c. aplikasi berbayar
  
-    d. 
+    d. menggunakan koneksi internet
  
  4. Apakah kita harus mendaftar untuk mendapatkan API & SDK ?
   
@@ -761,6 +761,10 @@
     a. GET
     
     **b. POST**
+    
+    c. Update
+    
+    d. Destroy
     
 ## Membuat Tampilan Route Codespace
 42. event onclick biasanya terletak pada ?
