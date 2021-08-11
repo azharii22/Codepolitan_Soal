@@ -870,3 +870,39 @@
        <p>Please <a href=" url('/auth/passport') " >authorize with Passport</a></p>
    
        @endif
+
+## Implementasi Scope di Laracel Passport
+51. untuk menggunakan scope pada laravel, kita perlu menggunakan ?
+
+    a. xampp
+    
+    b. akun user
+    
+    c. id user
+    
+    **d. middleware**
+
+52. source code untuk middleware yang digunakan untuk user yang memiliki scope post tweet adalah ?
+
+    a. Route::middleware('scope:post-tweet')->post('/tweets', 'TweetController@store');
+    
+    b. Route::middleware('auth:api', 'scope:post-tweet')->post('/tweets', 'TweetController@store');
+    
+    **c. Route::middleware(['auth:api', 'scope:post-tweet'])->post('/tweets', 'TweetController@store');**
+    
+    d. Route::middleware(['auth:api', 'scope:post-tweet'])->post'TweetController@store');
+    
+53. Route::middleware(['auth:api', 'scope:view-tweet'])->get('/tweets', 'TweetController@index');    
+
+    penjelasan dari source code diatas adalah ?
+    
+    a. menampilkan scope tweet
+    
+    **b. menampilkan banyak data scope tweet**
+    
+    c. menampilkan scope tweet kosong
+    
+    d. menampilkan data scope tweet yang diinginkan
+    
+## Persiapan Fungsi Refresh Token
+54. 
