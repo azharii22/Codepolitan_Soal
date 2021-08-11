@@ -905,4 +905,150 @@
     d. menampilkan data scope tweet yang diinginkan
     
 ## Persiapan Fungsi Refresh Token
-54. 
+54. Apakah fungsi Token pada Laravel Passport ada batas waktu penggunaannya ?
+
+    **a. Ya**
+    
+    b. Tidak
+    
+55. source code method untuk menyimpan data token yang sudah expire dan menyimpan data refresh token adalah ?
+
+    **a. public function up()**
+       
+       **{**
+       
+       **Schema::table('tokens', function (Blueprint $table) {**
+       
+       **$table->bigInteger('expire_in');**
+       
+       **$table->text('refresh_token');**
+       
+       **});**
+       
+       **}**
+       
+    b. public function up()
+       
+       {
+       
+       Schema::table('tokens', (Blueprint $table) {
+       
+       $table->bigInteger('expire_in');
+       
+       $table->text('refresh_token');
+       
+       });
+       
+       }
+       
+    c. public function up()
+       
+       {
+       
+       Schema::table('tokens', function (Blueprint $table) {
+       
+       $table->bigInteger('expire_inSave');
+       
+       $table->text('refresh_token');
+       
+       });
+       
+       }
+       
+    d. public function up()
+       
+       {
+       
+       Schema::table('tokens', function (Blueprint $table) {
+       
+       $table->bigInteger('expire_save');
+       
+       $table->text('refresh_token');
+       
+       });
+       
+       }   
+
+56. Passport::tokenExpireIn(now()->addSeconds(20));
+
+    penjelasan dari source code diatas adalah ?
+    
+    a. menambahkan waktu 20 detik setelah waktu expire
+    
+    b. mperpanjang passport laravel
+    
+    c. memperbanyak table pada token
+    
+    **d. durasi token hanya 20 detik setelah dibuka**
+
+## Implementasi Refresh Token di Laravel Passport
+
+57. source code sebuah method yang digunakan untuk mengecek tanggal expire token adalah ?
+
+    a. public function hasExpired()
+       
+       {
+       
+       return now()->gets($this->check->addSeconds($this->expires_in));
+       
+       }
+       
+    b. public function hasExpired()
+       
+       {
+       
+       return now()->gets($this->updated_at->seconds($this->expired_in));
+       
+       }
+       
+    **c. public function hasExpired()**
+       
+       **{**
+       
+       **return now()->gets($this->updated_at->addSeconds($this->expires_in));**
+       
+       **}**
+       
+    d. public function hasExpired()
+       
+       {
+       
+       return now()->gets($this->updated_at->addSeconds($this->hasExpired_in));
+       
+       }  
+       
+58. if (!$request->user() || !$request->user()->token) {
+    
+    return $next($request);
+    
+    }
+    
+    penjelesaran dari source code diatas adalah ?
+    
+    a. kondisi jika user melakukan autentikasi atau memiliki token maka akan dibiarkan untuk melanjutkan rquestnya
+    
+    **b. kondisi jika user tidak melakukan autentikasi dan tidak memiliki token maka akan dibiarkan untuk melanjutkan rquestnya**
+    
+    c. kondisi jika user tidak melakukan autentikasi atau tidak memiliki token maka akan error
+    
+    d. kondisi jika user tidak melakukan autentikasi maka akan dibiarkan untuk melanjutkan rquestnya
+
+59. apa yang terjadi jika user yang sudah memiliki token tidak melakukan update ?
+
+    a. masih bisa digunakan
+    
+    b. akan logout otomatis
+    
+    **c. token yang dimiliki akan hangus**
+    
+    d. error
+    
+60. berapa lama token di laravel passport berlaku ?
+
+    a. 20 detik
+    
+    b. 1 minggu
+    
+    c. 1 bulan
+    
+    **d. 1 tahun**
