@@ -154,4 +154,62 @@
        
 11. $user = User::where('email', $request->email)->first();
 
-          
+    source code diatas menjelaskan tentang ?
+    
+    a. koneksi database
+    
+    **b. otentikasi**
+    
+    c. relasi foreign key
+    
+    d. user
+
+12. source code untuk proses logout adalah ?
+
+    a. public function logout(Request $request)
+       
+       {
+       
+       $request->logout();
+       
+       return respons()->json([
+       
+       'message' => "log out succes'
+       
+       ], Response::HTTP_OK);
+       
+    b. public function logout(Request $request)
+       
+       {
+       
+       $request->tokens()->delete();
+       
+       return respons()->json([
+       
+       'message' => "log out succes'
+       
+       ], Response::HTTP_OK);
+       
+    **c. public function logout(Request $request)**
+       
+       **{**
+       
+       **$request->user()->tokens()->delete();**
+       
+       **return respons()->json([**
+       
+       **'message' => "log out succes'**
+       
+       **], Response::HTTP_OK);**
+       
+    d. public function logout(Request $request)
+       
+       {
+       
+       $request->user()->tokens()->delete();
+       
+       return respons()->json([
+       
+       'message' => "log out succes'
+       
+       ]; 
