@@ -77,4 +77,81 @@
    
    d. untuk melakukan database agar dapat dipublish
    
-8.    
+8. agar token bisa digunakan pada laravel sanctum, kita perlu untuk ?
+
+   a. eksport
+   
+   b. konek database
+   
+   c. memanggil
+   
+   **d. import**
+
+## Membuat API Endpoint Register Login dan Logout
+9. php artisan make::controller Api/Auth/AuthController
+
+   nama file controller dari source code diatas adalah ?
+   
+   a. Api
+   
+   b. Auth
+   
+   **c. AuthController**
+   
+   d. controller
+   
+10. source code untuk proses otentikasi pada saat register adalah ?
+
+    **a. public function register(Request $request)**
+       
+       **{**
+       
+       **$data = $request->validate([**
+       
+       **'name' => ['required', 'string', 'max:255'],**
+       
+       **'email' => ['required', 'string', 'email', 'max:255', 'unique:users],**
+       
+       **'device_name' => ['required']**
+       
+       **]);**
+    
+    b. public function register(Request $request)
+       
+       {
+       
+       'name' => ['required', 'string', 'max:255'],
+       
+       'email' => ['required', 'string', 'email', 'max:255', 'unique:users],
+       
+       'device_name' => ['required']
+      
+    c. public function register(Request $request)
+      
+       {
+       
+       $data = $request->validate([
+       
+       'name' => ['required', 'string', 'email', 'max:255', 'unique:users],
+       
+       'device_name' => ['required']
+       
+       ]);
+       
+    d. public function register($request)
+       
+       {
+       
+       $data = $request->validate([
+       
+       'name' => ['required', 'string', 'max:255'],
+       
+       'email' => ['required', 'string', 'email', 'max:255', 'unique:users],
+       
+       'device_name' => ['required']   
+       
+       ]);
+       
+11. $user = User::where('email', $request->email)->first();
+
+          
