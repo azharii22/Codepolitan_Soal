@@ -213,3 +213,273 @@
        'message' => "log out succes'
        
        ]; 
+
+## Membuat API Endpoint Reset Password
+13. Route::post ('/password/reset', 'Api\Auth\PasswordController@reset')
+    
+    ->middleware('auth:sanctum');
+    
+    nama endpoint pada source code diatas adalah ?
+    
+    a. post
+   
+    **b. password/reset**
+    
+    c. Auth
+    
+    d. reset
+
+14. ->middleware('auth:sanctum');
+
+    penjelasan source code diatas adalah ?
+    
+    a. posisi middleware untuk auth
+    
+    b. otentikasi sanctum
+    
+    c. method sanctum
+    
+    **d. untuk melakukan reset password kita perlu melakukan otentikasi**
+    
+15. public function reset(Request $request)
+    
+    {
+    
+    $request->validate([
+    
+    'password_old' => ['required', 'string', 'min:8],
+    
+    'password' => ['required', 'string', 'min:8', 'confirmed'],
+    
+    ]);
+    
+    bagian untuk memasukkan password baru adalah ?
+    
+    a. 'password_old' => ['required', 'string', 'min:8],
+    
+    b. 'password_new' => ['required', 'string', 'min:8],
+    
+    **c. 'password' => ['required', 'string', 'min:8', 'confirmed'],**
+    
+    d. $request->validate([
+
+16. return response([
+    
+    'message' => 'Update password failed',
+    
+    ], Response::HTTP_UNPROCESSABLE_ENTITY);
+    
+    apa yang terjadi jika source code diatas dijalankan ?
+    
+    a. akan menampilkan form input
+    
+    **b. error**
+    
+    c. akan melakukan reset password
+    
+    d. koneksi ke database terkait passowrd baru
+    
+## Membuat API Endpoint Attendance In dan Out
+17. source code untuk attendance in adalah ?
+
+    **a. if ($attendanceType == 'in')** 
+       
+       **{**
+       
+       **if (! $UserAttendanceToday) {**
+       
+       **}**
+       
+       **return response()->json(**
+       
+       [
+       
+       **'message' => 'User has been checked in',**
+       
+       **],**
+       
+       **Response:: HTTP_OK**
+       
+       **);**
+       
+    b. if ($attendanceType == 'in') 
+       
+       {
+       
+       if ($UserAttendanceToday) {
+       
+       }
+       
+       return response()->json(
+       
+       [
+       
+       'message' => 'User has been checked in',
+       
+       ],
+       
+       Response:: HTTP_OK
+       
+       );
+       
+    c. if ($attendanceType =! 'in') 
+       
+       {
+       
+       if (! $UserAttendanceToday) {
+       
+       }
+       
+       return response()->json(
+       
+       [
+       
+       'message' => 'User has been checked in',
+       
+       ],
+       
+       Response:: HTTP_OK
+       
+       );
+       
+    d. if ($attendanceType = 'in') 
+       
+       {
+       
+       if (! $UserAttendanceToday) {
+       
+       }
+       
+       return response()->json(
+       
+       [
+       
+       'message' => 'User has been checked in',
+       
+       ],
+       
+       Response:: HTTP_OK
+       
+       );  
+       
+18. source code untuk attendance in adalah ?
+
+     a. if ($attendanceType == 'out')
+       
+       {
+       
+       if (! $UserAttendanceToday) {
+       
+       if (UserAttendanceToday->status) {
+       
+       return response()->json(
+       
+       [
+       
+       'message' => 'User has been checked in',
+       
+       ],
+       
+       Response:: HTTP_OK
+      
+       ); 
+       
+       }
+       
+     b. if ($attendanceType =! 'out')
+       
+       {
+       
+       if ($UserAttendanceToday) {
+       
+       if (UserAttendanceToday->status) {
+       
+       return response()->json(
+       
+       [
+       
+       'message' => 'User has been checked in',
+       
+       ],
+       
+       Response:: HTTP_OK
+      
+       ); 
+       
+       }
+       
+    **c. if ($attendanceType == 'out')** 
+       
+       **{**
+       
+       **if ($UserAttendanceToday) {**
+       
+       **if (UserAttendanceToday->status) {**
+       
+       **return response()->json(**
+       
+       [
+       
+       **'message' => 'User has been checked in',**
+       
+       **],**
+       
+       **Response:: HTTP_OK**
+      
+       **);** 
+       
+       **}**
+       
+    d. if ($attendanceType = 'out')
+       
+       {
+       
+       if ($UserAttendanceToday) {
+       
+       if (UserAttendanceToday->status) {
+       
+       return response()->json(
+       
+       [
+       
+       'message' => 'User has been checked in',
+       
+       ],
+       
+       Response:: HTTP_OK
+      
+       ); 
+       
+       }
+       
+19. return response()->json(
+
+    [
+    
+    'messgae' => 'Please do check in first',
+    
+    ],
+    
+    Response::HTTP_UNPROCESSABLE_ENTITY
+    
+    );
+    
+    kondisi diatas adalah ?
+    
+    a. untuk check out
+    
+    **b. nilai balik ketika ingin check out tapi belum log in**
+    
+    c. respon dari user
+    
+    d. menjalankan perintah request
+    
+20. pada saat kita ingin mengisi presensi online biasanya kita diminta untuk mengupload foto. variabel penyimpnan foto dalam laravel yaitu ?
+
+    a. $photo
+    
+    b. $name
+    
+    **c. $path**
+    
+    d. $$update
