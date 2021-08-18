@@ -483,3 +483,46 @@
     **c. $path**
     
     d. $update
+
+## Membuat API Endpoint Attendance History
+21. untuk membuat attendance history, maka kita menggunakan route dengan method ?
+
+    **a. get**
+    
+    b. post
+    
+    c. public
+    
+    d. private
+
+22. $request->validate(
+    
+    [
+    
+    'form' => ['required'],
+    
+    'to' => ['required'],
+    
+    ]
+    
+    );
+    
+    kutipan source diatas merupakan proses ?
+    
+    a. input
+    
+    b. output
+    
+    c. proses
+    
+    **d. validasi**
+    
+23. response yang terdapat pada nilai balik fungsi history adalah ?
+
+    a. response vue
+    
+    **b. response json**
+    
+    c. response user
+    
+    d. response db
