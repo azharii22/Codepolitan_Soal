@@ -526,3 +526,128 @@
     c. response user
     
     d. response db
+
+## Implementasi Laravel UI Auth dan Proses Import Template
+24. php artisan ui bootstrap --auth
+
+    script diatas digunakan untuk >
+    
+    **a. generate ui auth**
+    
+    b. artisan dalam php
+    
+    c. auth laravel
+    
+    d. koneksi database
+
+25. untuk menggunakan template web yang kita dapati dari internet, yang perlu kita lakukan adalah ?
+
+    a. membuat folder baru
+    
+    b. menghapus semua folder yang ada
+    
+    **c. copy dan paste template**
+    
+    d. install laravel ui
+
+26. untuk dapat menggunakan scaffolding bootstrap pada laravel kita perlu mengistallnya terlebih dahulu. cara installasinya yaitu:
+
+    a. composer install laravel/ui:^2.4
+    
+    **b. composer require laravel/ui:^2.4**
+    
+    c. install laravel/ui:^2.4
+    
+    d. installlaravel --ui:^2.4
+
+## Membuat Halaman CRUD User
+27. method yang kita gunakan untuk menghapus adalah method ?
+
+    a. create
+    
+    b. delete
+    
+    **c. destroy**
+    
+    d. index
+
+28. if ($space->user_id != request()->user()->id)
+
+    kondisi diatas merupakan proses validasi berdasarkan ?
+
+    **a. id dari user**
+
+    b. username
+
+    c. nomor hp user
+
+    d. permintaan user
+
+29. sebelum menghapus data, ada baiknya sistem melakukan konfirmasi kepada pengguna guna memastikan data yang dipilih untuk dihapus. penulisan script untuk mengkonfirmasi tersebut adalah ?
+    
+    **a. onClick="return confirm('are you sure?');">Delete</button>**
+    
+    b. onClick="return validation('are you sure?');">Delete</button>
+    
+    c. onClick="view confirm('are you sure?');">Delete</button>
+    
+    d. onClick="return validation('are you sure?');">Delete</button>
+
+30. source code untuk membuat data user baru adalah ?
+
+    a. public function createNew()
+       
+       {
+       
+       return view('pages.user.create');
+       
+       }
+       
+    b. public function userNew()
+       
+       {
+       
+       return view('pages.user.create');
+       
+       }
+       
+    c. public function create()
+       
+       {
+       
+       return view('pagesUser.create');
+       
+       }
+       
+    **d. public function create()**
+       
+       **{**
+       
+       **return view('pages.user.create');**
+       
+       **}**   
+
+## Membuat Halaman Index dan Show Attendance
+31. public function index (Request $request)
+
+    {
+    
+    if ($request->ajax()) {
+    
+    }
+    
+    return view ('pages.attendance.index')
+    
+    }
+    
+    penjelasan source code diatas adalah ?
+    
+    a. membuat fungsi index yang bersifat public
+    
+    **b. fungsi yang jika berhasil akan menampilkan request ajax dan jika tidak maka akan menampilkan pages attendance index**
+    
+    c. request ajax untuk menampilkan fungsi index
+    
+    d. validasi berdasarkan id user
+    
+32.     
