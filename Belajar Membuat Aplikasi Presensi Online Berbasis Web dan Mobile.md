@@ -650,4 +650,14 @@
     
     d. validasi berdasarkan id user
     
-32.     
+32. berikut route yang benar untuk menampilkan attendance adalah ?
+
+    **a. Route::resource('attendance', 'AttendanceController')->only(['index', 'show]);** 
+    
+    b. Route::resource('attendance', 'AttendanceController');
+    
+    c. Route::resource(AttendanceController)->only(['index', 'show]); 
+    
+    d. Route::resource('attendance', 'AttendanceController')->only(['show]); 
+
+33. 
