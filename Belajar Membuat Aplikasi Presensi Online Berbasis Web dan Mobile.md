@@ -660,4 +660,233 @@
     
     d. Route::resource('attendance', 'AttendanceController')->only(['show]); 
 
-33. 
+33. Cara menambahkan relasi Attendance dengan user adalah
+
+    a. 
+    ```
+    public function user() {
+        return $this->belongsTo(User::class);
+    }
+    ```
+
+    b.
+    ```
+    public function user() {
+        return $this->belongsTo(User::class);
+    }
+    ```
+
+    c.
+    ```
+    public function user() {
+        return $this->belongsTo(User::class);
+    }
+    ```
+
+    d.
+    ```
+    public function user() {
+        return $this->belongsTo(User::class);
+    }
+    ```
+
+34. ``return row.status ? "Check Out" : "Check In"`` artinya adalah
+
+    a. Mengembalikan nilai status jika true menampilkan Check In
+
+    **b. Mengembalikan nilai status jika true menampilkan Check Out**
+
+    c. Mengembalikan nilai status jika false menampilkan Check In
+
+    d. a dan c benar
+
+## Membuat Chart di Laravel
+
+35. Cara menginstall package laravel charts adalah
+
+    a. composer install consoletvs/charts "7.x"
+
+    b. composer update consoletvs/charts "7.x"
+
+    **c. composer require consoletvs/charts "7.x"**
+
+    d. composer required consoletvs/charts "7.x"
+
+36. Perintah artisan untuk membuat chart dengan laravel charts adalah
+
+    a. php artisan create:chart SampleChart
+
+    b. php artisan create:charts SampleChart
+
+    **c. php artisan make:chart SampleChart**
+
+    d. php artisan make:charts SampleChart
+
+37. Method yang digunakan untuk mendapatkan jumlah data dari query adalah...
+
+    a. length()
+
+    **b. count()**
+    
+    c. max()
+
+    d. exists()
+
+38. Dimanakah letak directory untuk meregistrasikan chart...
+
+    **a. app/Providers/AppServiceProvider**
+
+    b. app/Providers/AuthServiceProvider
+
+    c. app/Providers/EventServiceProvider
+
+    d. app/Providers/RouteServiceProvider
+
+## Membuat API Endpoint Forgot Password
+
+39. Source code untuk membuat API Endpoint forgot password adalah...
+
+    a. Route::update('/password/forgot', 'Api\Auth\PasswordController@SendResetLinkEmail');
+    
+    b. Route::update('/password/forgot', 'Api\Auth\PasswordController@SendResetLinkEmail')->middleware('auth:sanctum');
+
+    **c. Route::post('/password/forgot', 'Api\Auth\PasswordController@SendResetLinkEmail');**
+
+    d. Route::post('/password/forgot', 'Api\Auth\PasswordController@SendResetLinkEmail')->middleware('auth:sanctum');
+
+40. Source code untuk memanggil SendPasswordResetEmails adalah...
+
+    a. ``SendPasswordResetEmails;``
+
+    b. ``SendPasswordResetEmails();``
+
+    **c. ``use SendPasswordResetEmails;``**
+
+    d. ``use SendPasswordResetEmails();``
+
+41. Apa yang perlu di inputkan untuk mendapatkan SendPasswordResetEmails adalah...
+
+    a. email dan password
+
+    b. username dan password
+
+    **c. email**
+
+    d. username
+
+42. Cara untuk mencoba atau mengetes apakah mendapatkan link reset password adalah
+
+    a. Mengganti MAIL_MAILER=smtp
+
+    **b. Mengganti MAIL_MAILER=log**
+
+    c. Mengganti MAIL_DRIVER=smtp
+
+    d. Mengganti MAIL_DRIVER=log
+
+
+## Implementasi Middleware untuk Admin
+
+43. Tujuan dari membuat middleware IsAdmin adalah?
+
+    **a. Untuk mengecek apakah yang melakukan request merupakan user yang berstatus admin jika true lanjut melakukan request jika false redirect halaman home**
+
+    b. Untuk mengecek apakah yang melakukan request merupakan user yang berstatus user jika true lanjut melakukan request jika false redirect halaman home
+
+    c. Untuk mengecek apakah yang melakukan request merupakan user yang berstatus admin jika false lanjut melakukan request jika true redirect halaman home
+
+    d. Untuk mengecek apakah yang melakukan request merupakan user yang berstatus user jika false lanjut melakukan request jika true redirect halaman home
+
+44. Perintah artisan untuk membuat middleware IsAdmin adalah
+
+    a. php artisan create:middleware IsAdmin
+
+    b. php artisan build:middleware IsAdmin
+
+    **c. php artisan make:middleware IsAdmin**
+
+    d. php artisan migrate:middleware IsAdmin
+
+45. Dimana meregistrasikan middleware yang telah dibuat?
+
+    a. pada file kernel di variable middlewareGroup
+
+    **b. pada file kernel di variable routeMiddleware**
+
+    c. pada file AppServiceProvider di method register
+
+    d. pada file AppServiceProvider di method boot
+
+46. Bagaimana cara menambahkan middleware auth dan is_admin pada method construct?
+
+    a. $this->middleware('auth', 'is_admin');
+
+    b. $this->middleware({'auth', 'is_admin'});
+
+    **c. $this->middleware(['auth', 'is_admin']);**
+
+    d. $this->middleware('auth')->('is_admin');
+
+## Intro
+
+47. Library apa yang akan digunakan untuk consume API?
+
+    a. volley
+
+    **b. retrofit**
+
+    c. dagger
+
+    d. chuck
+
+48. Web backend yang sudah dibuat digabungkan dengan mobile melalui...
+
+    a. http request
+
+    **b. API**
+
+    c. database
+
+    d. semua benar 
+
+## Prepare Project
+
+49. Untuk membuat project Activity apa yang dipilih
+
+    a. Basic Activity
+
+    **a. Empy Activity**
+
+    a. No Activity
+
+    a. Bottom Navigation Activity
+
+50. Language dan minimum SDK yang digunakan adalah
+
+    a. java, API 23
+
+    b. java, API 25
+
+    **c. kotlin, API 23**
+
+    d. kotlin, API 25
+
+51. Dimanakah letak untuk menaruh folder/file asset
+
+    **a. drawable**
+
+    b. layout
+
+    c. values
+
+    d. minmap
+
+52. Dimanakah letak untuk mengatur warna
+
+    a. res/values/styles.xml
+
+    **b. res/values/colors.xml**
+
+    c. res/values/color.xml
+
+    d. res/values/strings.xml
