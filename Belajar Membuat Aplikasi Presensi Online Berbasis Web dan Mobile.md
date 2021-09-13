@@ -890,3 +890,188 @@
     c. res/values/color.xml
 
     d. res/values/strings.xml
+
+## Splash Activity (UI)
+53. perintah untuk membuat halaman baru pada github yaitu ?
+
+    **a. git checkout -b ui-splash**
+    
+    b. git new -b ui-splash
+    
+    c. git new page ui-splash
+    
+    d. git checkout -b ui - - splash
+
+54. android:text="@string/app_name"/>
+
+    maksud dari source code diatas adalah ?
+    
+    a. kolom text untuk menulis tahun aplikasi dibuat
+    
+    b. kolom text untuk menulis dimana aplikasi dibuat
+    
+    **c. kolom text untuk menulis nama aplikasi yang kita buat**
+    
+    d. kolom text untuk menulis nama pembuat aplikasi
+    
+55. perintah agar posisi gambar berada ditengah yaitu ?
+
+    a. android:image="center"
+    
+    **b. android:gravity="center"**
+    
+    c. android:image="justify"
+    
+    d. android:gravity="justify"
+
+56. android:textStyle="bold"
+
+    yang dimaksud dengan bold adalah ?
+    
+    a. tulisan dengan style miring
+    
+    b. tulisan dengan style biasa
+    
+    c. tulisan dengan style vertical
+    
+    **d. tulisan dengan style tebal**
+
+## Login Activity (UI)
+57. source code untuk membuat kolom untuk mengisi email ketika login adalah ?
+
+    **a. <?xml version="1.0" encoding="utf-8"?>**
+       
+       **<shape xmlns:android="http://schemas.android.com/apk/res/android"**
+       
+       **android:shape="rectangle">**
+
+       **<corners android:radius="20dp"/>**
+       
+       **<solid android:color="#EFEFEF"/>**
+
+       **</shape>**
+       
+   b. <?xml version="1.0" encoding="utf-8"?>
+       
+   <shape xmlns:android="http://schemas.android.com/apk/view/android"
+       
+       android:shape="rectangle">
+
+       <corners android:radius="20dp"/>
+       
+       <solid android:color="#EFEFEF"/>
+
+       </shape> 
+       
+ c. <?xml version="1.0" encoding="utf-8"?>
+       
+   <shape xmlns:android="http://schemas.android.com/apk/src/android"
+       
+       android:shape="rectangle">
+
+       <corners android:radius="20dp"/>
+       
+       <solid android:color="#EFEFEF"/>
+
+       </shape>  
+       
+ d. <?xml version="1.0" encoding="utf-8"?>
+       
+   <shape xmlns:android="http://schemas.android.com/apk/app/android"
+       
+       android:shape="rectangle">
+
+       <corners android:radius="20dp"/>
+       
+       <solid android:color="#EFEFEF"/>
+
+       </shape> 
+
+58. agar password yang kita input tidak terlihat, maka perintah yang kita jalankan adalah ?
+
+    a. app:endIconMode="password_star"
+    
+    **b. app:endIconMode="password_toggle"**
+    
+    c. app:endIconMode="password_code"
+    
+    d. app:endIconMode="password"
+
+59. source untuk membuat button login adalah ?
+
+    **a. android:id="@+id/btn_login"**
+         
+       **android:layout_width="match_parent"**
+       
+       **android:layout_height="wrap_content"**
+       
+       **android:text="@string/login"**
+       
+       **android:textColor="@android:color/white"**
+       
+       **android:background="@drawable/bg_btn_primary"**
+       
+       **android:layout_marginTop="24dp"/>**
+       
+   b. android:id="@+id/login"
+      
+   android:layout_width="match_parent"
+      
+   android:layout_height="wrap_content"
+      
+   android:text="@string/login"
+      
+   android:textColor="@android:color/white"
+      
+   android:background="@drawable/bg_btn_primary"
+      
+   android:layout_marginTop="24dp"/> 
+   
+   c. android:id="@+id/btn_login"
+      
+   android:layout_width="match_parent"
+      
+   android:layout_height="wrap_content"
+      
+   android:textColor="@android:color/white"
+      
+   android:background="@drawable/bg_btn_primary"
+      
+   android:layout_marginTop="24dp"/>
+   
+   d. android:id="@+id/login"
+      
+   android:layout_width="match_parent"
+      
+   android:layout_height="wrap_content"
+      
+   android:text="@string/login"
+      
+   android:textColor="@android:color/white"
+      
+   android:layout_marginTop="24dp"/>
+   
+60. android:src="@drawable/image_login"
+
+    source code diatas digunakan untuk ?
+    
+    a. menghapus gambar yang sudah ada
+    
+    b. mengedit gambar yang sudah ada
+    
+    **c. menambahkan gambar pada tampilan**
+    
+    d. agar gambar yang diinput bisa banyak
+
+## Forgot Password Activity (UI)
+61. agar tombol forgot password berada di sebelah kanan, maka source code yang digunakan adalah ?
+
+    a. android:layout_gravity="right"
+    
+    b. android:layout_gravity="center"
+    
+    c. android:layout_gravity="justify"
+    
+    **d. android"layout_gravity="end"**
+
+62. 
