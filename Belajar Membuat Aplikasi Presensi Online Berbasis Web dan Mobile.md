@@ -1074,4 +1074,258 @@
     
     **d. android"layout_gravity="end"**
 
-62. 
+62. a
+
+63. b
+
+64. c
+
+## History Fragment (UI) - 01
+
+65. Fragment adalah ?
+
+    **a. Merupakan bagian dari UI dalam activity**
+
+    b. Merupakan bagian model
+
+    c. Merupakan bagian dari Mockup UI
+
+    d. Merupakan bagian dari padding
+
+66. Constraint layout adalah ?
+
+    **a. Adalah sekelompok tampilan yang menyejajarkan semua anak dalam satu arah, secara vertikal atau horizontal**
+
+    b. Komponen untuk menampilkan informasi dalam bentuk grid
+
+    c. Adalah elemen yang berfungsi untuk menampilkan output berupa text
+
+    d. Semua salah
+
+67. ScrollView digunakan pada saat?
+
+    **a.  Digunakan pada saat konten pada layar aplikasi harus di Scroll secara vertikal**
+
+    b. Digunakan untuk mendapatkan nilai dari attribute
+
+    c. Digunakan untuk menyisipkan satu atau lebih ke elemen terakhir ke database
+
+    d. A dan B benar
+
+68. Agar lebar atribut sesuai dengan lebar dari perangkat ?
+    
+    **a. android:layout_width="match_parent"**
+
+    b. android:layout_width="match"
+
+    c. android:layout_width="parent"
+
+    d. android:layout_width="parent_match"
+ 
+68. Agar lebar atribut sesuai dengan tinggi dari perangkat ?
+    
+    **a. android:layout_height="match_parent"**
+
+    b. android:layout_width="match_parent"
+
+    c. android:layout_height="parent_match"
+
+    d. android:layout_width="parent"
+
+##  History Fragment (UI) - 02
+
+69. CardView digunakan untuk ?
+
+    **a. Sebagai wrapper atau frame layout yang akan membungkus layout di dalamnya dengan desain menyerupai kartu**
+
+    b. Komponen untuk menampilkan gambar
+
+    c. Adalah sekelompok tampilan yang menyejajarkan semua anak dalam satu arah, secara vertikal atau horizontal
+
+    d. komponen untuk menampilkan informasi dalam bentuk grid
+
+70. Digunakan untuk apa properti CardElevation ?
+
+    **a. Dipakai untuk menentukan ukuran dan kehalusan dari shadow sealami mungkin**
+
+    b. Digunakan untuk mendapatkan nilai dari attribute
+
+    c. Digunakan untuk menyisipkan satu atau lebih ke elemen terakhir ke database
+
+    d. Semua salah
+
+71. android:width="1dp", yang dimaksud dengan dp adalah ?
+
+    a. Depend-independent Pixels
+ 
+    **b. Density-independent Pixels**
+
+    c. Density-internal Pixels
+
+    d. Density-independent parts
+
+72. Menentukan warna background dari card ?
+
+    a. cardbackground
+
+    **b. cardbackgroundColor**
+
+    c. backgroundColor
+
+    d. cardcolorbackground
+
+73. Padding digunakan untuk ?
+
+    **a. Mempertebal atau memperlapis sebuah konten View**
+
+    b. Mempertipis atau memperlapis sebuah konten View
+
+    c. Melebarkan atau memperlapis sebuah konten View
+    
+    d. Mempertebal atau memperlapis sebuah konten View
+
+## Profile Fragment (UI)
+
+74. Textview adalah ?
+
+    **a. adalah elemen yang berfungsi untuk menampilkan output berupa text**
+
+    b. Komponen untuk menampilkan gambar
+
+    c. Adalah sekelompok tampilan yang menyejajarkan semua anak dalam satu arah, secara vertikal atau horizontal
+
+    d. komponen untuk menampilkan informasi dalam bentuk grid
+
+75. Agar background Appbar menjadi transparan ?
+
+    a. android:background="@android:color=transparent
+
+    b. android:background="@android:color/transparan
+
+    c. android:cardbackground="@android:color/transparent
+
+    **d. android:background="@android:color/transparent"**
+
+76. Apa itu nested layout ?
+
+    **a. Nested layout adalah kondisi di mana sebuah parent layout yang memiliki parent layout lagi di dalamnya**
+
+    b. Nested layout adalah kondisi di mana sebuah parent layout yang tidak memiliki parent layout lagi di dalamnya
+
+    c. Nested layout adalah kondisi di mana sebuah parent layout yang memiliki linear layout lagi di dalamnya
+
+    d. Nested layout adalah kondisi di mana sebuah parent layout yang memiliki coonstraint layout lagi di dalamnya
+
+77. Menetapkan arah tata letak secara Vertical ?
+
+    a. android:orientation="Horizontal"
+
+    b. android:vertical="Orientation"
+
+    c. android:orientasi="Vertical"
+
+    **d. android:orientation="Vertical"**
+
+78. ImageView adalah ?
+
+    **a. Komponen untuk menampilkan gambar**
+
+    b. komponen untuk menampilkan informasi dalam bentuk list
+
+    c. Komponen untuk menampilkan informasi dalam bentuk grid
+
+    d. Semua salah
+
+## Change Password Activity (UI)
+
+79. Untuk menulis kode program untuk membuat aplikasi Android di file ?
+
+    a. File Exe
+
+    b. File Docx
+
+    c. File Text
+
+    **d. file Xml**
+
+80. Berikut ini merupakan karakteristik bahasa pemrograman Android adalah ?
+    a. Tidak memiliki library sendiri
+
+    b. Pemrograman tidak berorientasi objek
+    
+    **c. Pemrograman berorientasi objek**
+
+    d. Semua benar
+
+81. Jika kita ingin membuat tombol, perlu menggunakan tag ?
+```
+    a. <Image>
+
+    b. <View>
+
+    **c. <Button>**
+
+    d. <Text>
+```
+
+82. Kegunaan dari @+id/ ?
+
+    **a. Digunakan saat akan memberikan sebuah id pada elemen atau tag dari layout XML untuk membedakan kegunaan masing-masing elemen atau tag**
+
+    b. Digunakan saat akan memberikan sebuah title pada elemen atau tag dari layout XML untuk membedakan kegunaan masing-masing elemen atau tag
+
+    c. Digunakan saat akan menggunakan salah satu elemen yang sudah diberikan @+id/ misalnya saat kita melakukan layouting menggunakan RelativeLayout
+
+    d. A dan B benar
+
+83. Jenis metode inputan untuk password ?
+    
+   **a. textPassword**
+
+    b. textView
+
+    c. textMail
+ 
+    d. textButton
+
+## Menggabung Seluruh Halaman & Debug
+
+84. Fungsi dari postDelayed() adalah ?
+
+   **a. Memberikan waktu jeda sebelum eksekusi**
+
+    b. Langsung eksekusi tanpa waktu jeda untuk eksekusi
+
+    c. Tidak memberikan efek apa-apa
+
+    d. Memberikan waktu jeda selama satu jam
+
+85. Penulisan untuk implementasi librari Anko ?
+
+    a. intent "org.jetbrains.anko:anko-commons:0.10.8"
+
+    b. implement "org.jetbrains.anko:anko-commons:0.10.8"
+
+    c. implementasi "org.jetbrains.anko:anko-commons:0.10.8"
+
+    **d. implementation "org.jetbrains.anko:anko-commons:0.10.8"**
+
+86. Fungsi onClick() ?
+
+    **a. Memberikan aksi ketika tombol disentuh**
+
+    b. Memberikan efek visual
+
+    c. Menjalankan aplikasi 
+
+    d. Menjalankan Localhost
+
+87. ImageButton digunakan untuk ?
+
+    **a. Adalah suatu tombol dengan tampilan sebuah gambar atau image**
+
+    b.  Adalah suatu tombol dengan tampilan sebuah text atau tulisan
+
+    c.  Adalah suatu tombol dengan tampilan sebuah tulisan dengan gaya password
+
+    d.  Semua salah
