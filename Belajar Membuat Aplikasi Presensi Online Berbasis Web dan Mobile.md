@@ -1108,9 +1108,104 @@
     
     **d. view binding**
 
+## Main Activity (UI)
+65. untuk menampilkan ikon, maka kita perlu mencarin ikon tersebut di ?
+
+    a. drawable/new/icon
+    
+    **b. drawable/new/vector asset**
+    
+    c. drawable/new/image asset
+    
+    d. drawable/new/fragment
+    
+66. source code untuk membuat bottom navigation berupa lokasi adalah ?
+
+    **a. <item
+        
+       android:id="@+id/action_attendance"
+       
+       android:title="@string/history"
+       
+       android:icon="@drawable/ic_baseline_location_on_24"
+       
+       app:showAsAction="ifRoom"/>
+       
+    b. <item
+        
+       android:id="@+id/action_attendance"
+       
+       android:title="@string/history"
+       
+       android:icon="@drawable/ic_baseline_location"
+       
+       app:showAsAction="ifRoom"/>   
+       
+    c. <item
+        
+       android:id="@+id/action_attendance"
+       
+       android:title="@string/history"
+       
+       android:icon="@drawable/navigation_location"
+       
+       app:showAsAction="ifRoom"/>  
+       
+    d. <item
+        
+       android:id="@+id/action_attendance"
+       
+       android:title="@string/history"
+       
+       android:icon="@drawable/maps_location"
+       
+       app:showAsAction="ifRoom"/>  
+
+67. bahasa yang digunakan untuk membuat fragment adalah ?
+
+    a. Java
+    
+    b. PhP
+    
+    **c. kotlin**
+    
+    d. C++
+
+68. source code untuk membuat fragment history adalah ?
+
+    **a. R.id.action_history -> {
+       
+       **openFragment(HistoryFragment())
+       
+       **return@setOnNavigationItemSelectedListener true
+       
+       **}
+       
+    b. R.id.action_history -> {
+       
+       openFragment(FragmentHistory())
+       
+       return@setOnNavigationItemSelectedListener true
+       
+       }   
+       
+    c. R.id.action_history -> {
+       
+       openFragment(FragmentHistory())
+       
+       }  
+       
+    d. R.id.action_history -> {
+       
+       openFragment(Fragment_History())
+       
+       return@setOnNavigationItemSelectedListener true
+       
+       }    
+
 ## History Fragment (UI) - 01
 
-65. Fragment adalah ?
+69. Fragment adalah ?
 
     **a. Merupakan bagian dari UI dalam activity**
 
@@ -1120,7 +1215,7 @@
 
     d. Merupakan bagian dari padding
 
-66. Constraint layout adalah ?
+70. Constraint layout adalah ?
 
     **a. Adalah sekelompok tampilan yang menyejajarkan semua anak dalam satu arah, secara vertikal atau horizontal**
 
@@ -1130,7 +1225,7 @@
 
     d. Semua salah
 
-67. ScrollView digunakan pada saat?
+71. ScrollView digunakan pada saat?
 
     **a.  Digunakan pada saat konten pada layar aplikasi harus di Scroll secara vertikal**
 
@@ -1140,7 +1235,7 @@
 
     d. A dan B benar
 
-68. Agar lebar atribut sesuai dengan lebar dari perangkat ?
+72. Agar lebar atribut sesuai dengan lebar dari perangkat ?
     
     **a. android:layout_width="match_parent"**
 
@@ -1150,7 +1245,7 @@
 
     d. android:layout_width="parent_match"
  
-68. Agar lebar atribut sesuai dengan tinggi dari perangkat ?
+73. Agar lebar atribut sesuai dengan tinggi dari perangkat ?
     
     **a. android:layout_height="match_parent"**
 
@@ -1162,7 +1257,7 @@
 
 ##  History Fragment (UI) - 02
 
-69. CardView digunakan untuk ?
+74. CardView digunakan untuk ?
 
     **a. Sebagai wrapper atau frame layout yang akan membungkus layout di dalamnya dengan desain menyerupai kartu**
 
@@ -1172,7 +1267,7 @@
 
     d. komponen untuk menampilkan informasi dalam bentuk grid
 
-70. Digunakan untuk apa properti CardElevation ?
+75. Digunakan untuk apa properti CardElevation ?
 
     **a. Dipakai untuk menentukan ukuran dan kehalusan dari shadow sealami mungkin**
 
@@ -1182,7 +1277,7 @@
 
     d. Semua salah
 
-71. android:width="1dp", yang dimaksud dengan dp adalah ?
+76. android:width="1dp", yang dimaksud dengan dp adalah ?
 
     a. Depend-independent Pixels
  
@@ -1192,7 +1287,7 @@
 
     d. Density-independent parts
 
-72. Menentukan warna background dari card ?
+77. Menentukan warna background dari card ?
 
     a. cardbackground
 
@@ -1202,7 +1297,7 @@
 
     d. cardcolorbackground
 
-73. Padding digunakan untuk ?
+78. Padding digunakan untuk ?
 
     **a. Mempertebal atau memperlapis sebuah konten View**
 
@@ -1214,7 +1309,7 @@
 
 ## Profile Fragment (UI)
 
-74. Textview adalah ?
+79. Textview adalah ?
 
     **a. adalah elemen yang berfungsi untuk menampilkan output berupa text**
 
@@ -1224,7 +1319,7 @@
 
     d. komponen untuk menampilkan informasi dalam bentuk grid
 
-75. Agar background Appbar menjadi transparan ?
+80. Agar background Appbar menjadi transparan ?
 
     a. android:background="@android:color=transparent
 
@@ -1234,7 +1329,7 @@
 
     **d. android:background="@android:color/transparent"**
 
-76. Apa itu nested layout ?
+81. Apa itu nested layout ?
 
     **a. Nested layout adalah kondisi di mana sebuah parent layout yang memiliki parent layout lagi di dalamnya**
 
@@ -1244,7 +1339,7 @@
 
     d. Nested layout adalah kondisi di mana sebuah parent layout yang memiliki coonstraint layout lagi di dalamnya
 
-77. Menetapkan arah tata letak secara Vertical ?
+82. Menetapkan arah tata letak secara Vertical ?
 
     a. android:orientation="Horizontal"
 
@@ -1254,7 +1349,7 @@
 
     **d. android:orientation="Vertical"**
 
-78. ImageView adalah ?
+83. ImageView adalah ?
 
     **a. Komponen untuk menampilkan gambar**
 
@@ -1266,7 +1361,7 @@
 
 ## Change Password Activity (UI)
 
-79. Untuk menulis kode program untuk membuat aplikasi Android di file ?
+84. Untuk menulis kode program untuk membuat aplikasi Android di file ?
 
     a. File Exe
 
@@ -1276,7 +1371,7 @@
 
     **d. file Xml**
 
-80. Berikut ini merupakan karakteristik bahasa pemrograman Android adalah ?
+85. Berikut ini merupakan karakteristik bahasa pemrograman Android adalah ?
     a. Tidak memiliki library sendiri
 
     b. Pemrograman tidak berorientasi objek
@@ -1285,7 +1380,7 @@
 
     d. Semua benar
 
-81. Jika kita ingin membuat tombol, perlu menggunakan tag ?
+86. Jika kita ingin membuat tombol, perlu menggunakan tag ?
 ```
     a. <Image>
 
@@ -1296,7 +1391,7 @@
     d. <Text>
 ```
 
-82. Kegunaan dari @+id/ ?
+87. Kegunaan dari @+id/ ?
 
     **a. Digunakan saat akan memberikan sebuah id pada elemen atau tag dari layout XML untuk membedakan kegunaan masing-masing elemen atau tag**
 
@@ -1306,7 +1401,7 @@
 
     d. A dan B benar
 
-83. Jenis metode inputan untuk password ?
+88. Jenis metode inputan untuk password ?
     
    **a. textPassword**
 
@@ -1318,7 +1413,7 @@
 
 ## Menggabung Seluruh Halaman & Debug
 
-84. Fungsi dari postDelayed() adalah ?
+89. Fungsi dari postDelayed() adalah ?
 
    **a. Memberikan waktu jeda sebelum eksekusi**
 
@@ -1328,7 +1423,7 @@
 
     d. Memberikan waktu jeda selama satu jam
 
-85. Penulisan untuk implementasi librari Anko ?
+90. Penulisan untuk implementasi librari Anko ?
 
     a. intent "org.jetbrains.anko:anko-commons:0.10.8"
 
@@ -1338,7 +1433,7 @@
 
     **d. implementation "org.jetbrains.anko:anko-commons:0.10.8"**
 
-86. Fungsi onClick() ?
+91. Fungsi onClick() ?
 
     **a. Memberikan aksi ketika tombol disentuh**
 
@@ -1348,7 +1443,7 @@
 
     d. Menjalankan Localhost
 
-87. ImageButton digunakan untuk ?
+92. ImageButton digunakan untuk ?
 
     **a. Adalah suatu tombol dengan tampilan sebuah gambar atau image**
 
