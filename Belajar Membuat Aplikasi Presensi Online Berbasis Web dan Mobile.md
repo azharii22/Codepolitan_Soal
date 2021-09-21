@@ -1074,11 +1074,39 @@
     
     **d. android"layout_gravity="end"**
 
-62. a
+62. Kita perlu mematikan Action Bar terlebih dahulu karena tidak semua activity menggunakan action bar.
 
-63. b
+    dimanakah letak action bar ?
+    
+    a. colors.xml
+    
+    b. strings.xml
+    
+    **c. styles.xml**
+    
+    d. activity.xml
 
-64. c
+63. app:layout_constraintTop_toTopOf="parent"
+
+    source code diatas akan menampilkan app layout yang posisinya berada di ?
+    
+    **a. atas**
+    
+    b. bawah
+    
+    c. kanan
+    
+    d. kiri
+
+64. fitur yang memudahkan untuk menulis kode yang berinteraksi dengan tampilan adalah fitur ?
+
+    a. activity
+    
+    b. style
+    
+    c. splash
+    
+    **d. view binding**
 
 ## History Fragment (UI) - 01
 
