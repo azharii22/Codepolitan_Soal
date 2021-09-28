@@ -1203,9 +1203,221 @@
        
        }    
 
+## Bottom Sheet Dialog (UI) - 01
+
+69. Bottom Sheet Dialog adalah ?
+
+    a. 
+
+    b. 
+
+    c. 
+
+    d. 
+
+70. app:behavior_hideable = false
+
+    maksud dari source code diatas adalah  ?
+
+    a. memunculkan menu back
+
+    **b. agar bottom sheet selalu tampil dan tidak sembunyi**
+
+    c. agar lokasi kita tidak aktif
+
+    d. agar lokasi kita tetap aktif
+
+71. Dimanakah letak Bottom Sheet Dialaog ?
+
+    a. Atas
+
+    b. Tengah
+
+    **c. Bawah**
+
+    d. Pojok kanan atas
+
+72. Menu apa saja yang terdapat pada Bottom Sheet Dialog ?
+
+    **a. History, Attendance, Profile**
+
+    b. Profile, Logout
+
+    c. History, Maps
+
+    d. Maps, Waktu, Profile
+
+## Bottom Sheet Dialog (UI) - 02
+
+73. Source code untuk menambahkan foto pada Bottom Sheet Dialog adalah ?
+
+    a. <TextView
+        
+        android:id="@+id/text_view_your_photo"
+        
+        android:layout_width="wrap_content"
+        
+        android:layout_height="wrap_content"
+        
+        android:text="@string/your_photo"
+        
+        android:textColor="@color/colorPrimary"
+        
+        android:textStyle="bold"
+        
+        android:layout_marginTop="20dp"
+        
+        app:layout_constraintStart_toStartOf="parent"
+        
+        app:layout_constraintTop_toBottomOf="@id/tv_current_photo"/>
+
+    b. <TextView
+        
+        android:id="view_your_photo"
+        
+        android:layout_width="wrap_content"
+        
+        android:layout_height="wrap_content"
+        
+        android:text="your_photo"
+        
+        android:textColor="@color/colorPrimary"
+        
+        android:textStyle="bold"
+        
+        android:layout_marginTop="20dp"
+        
+        app:layout_constraintStart_toStartOf="parent"
+        
+        app:layout_constraintTop_toBottomOf="@id/tv_current_location"/>
+
+    c. <TextView
+        
+        android:layout_width="wrap_content"
+        
+        android:layout_height="wrap_content"
+        
+        android:text="@string/your_photo"
+        
+        android:textColor="@color/colorPrimary"
+        
+        android:textStyle="bold"
+        
+        android:layout_marginTop="20dp"
+        
+        app:layout_constraintTop_toBottomOf="@id/tv_current_location"/>
+
+    **d. <TextView**
+        
+        android:id="@+id/text_view_your_photo"
+        
+        android:layout_width="wrap_content"
+        
+        android:layout_height="wrap_content"
+        
+        android:text="@string/your_photo"
+        
+        android:textColor="@color/colorPrimary"
+        
+        android:textStyle="bold"
+        
+        android:layout_marginTop="20dp"
+        
+        app:layout_constraintStart_toStartOf="parent"
+        
+        app:layout_constraintTop_toBottomOf="@id/tv_current_location"/>
+
+74. <ImageView
+    
+    android:id="@+id/iv_capture_photo"
+    
+    android:layout_width="match_parent"
+    
+    android:layout_height="wrap_content"
+    
+    app:layout_constraintHeight_min="40dp"
+    
+    app:layout_constraintHeight_max="200dp"
+    
+    android:scaleType="fitCenter"
+    
+    android:src="@drawable/ic_baseline_add_circle_24"
+    
+    android:background="@drawable/bg_capture_photo"
+    
+    android:layout_marginTop="12dp"
+    
+    app:layout_constraintTop_toBottomOf="@id/text_view_your_photo"/>
+
+    a. agar mengetahui lokasi saat kita menambahkan foto
+
+    **b. agar foto yang kita tambah dapat tampil**
+
+    c. agar kita dapat menambahkan foto
+
+    d. agar foto yang kita tambah berada di profile
+
+75. untuk menambahkan tombol maka source code yang digunakan adalah ?
+
+    **a. Button**
+
+    b. TextView
+
+    c. ImageView
+
+    d. String
+
+76. 
+
+## Show Google Maps (UI)
+
+77. untuk menampilkan google maps di android pada project yang kita buat, maka langkah pertama yang kita lakukan adalah ? ?
+
+    a. masuk ke google dengan akun yang sudah terdaftar
+
+    b. mendaftar ke google maps untuk mendapatkan akun
+
+    **c. mendapatkan API Key dari google maps**
+
+    d. 
+
+78. setelah langkah pertama dilakukan, maka selanjutnya kita perlu untuk ?
+
+    a. install php
+
+    **b. mengaktifkan SDK untuk android**
+
+    c. mendownload maps agar tetap terlihat secara offline
+
+    d. menginstall android studio
+
+79. setelah kita mendapatkan meta-data pada google maps, maka kita perlu membuat salinannya pada folder ?
+
+    a. activity
+
+    b. fragment
+
+    c. layout
+
+    **d. manifests**
+
+80. source code untuk tampilan google maps adalah ?
+
+    **a. <fragment**
+    
+    **android:id="@+id/map_attendance"**
+    
+    **android:name="com.google.android.gms.maps.SupportMapFragment"**
+    
+    **android:layout_width="match_parent"**
+    
+    **android:layout_height="match_parent"**
+    
+    **tools:context="com.example.mapwithmarker.MapsMarkerActivity" />**
+
 ## History Fragment (UI) - 01
 
-69. Fragment adalah ?
+81. Fragment adalah ?
 
     **a. Merupakan bagian dari UI dalam activity**
 
@@ -1215,7 +1427,7 @@
 
     d. Merupakan bagian dari padding
 
-70. Constraint layout adalah ?
+82. Constraint layout adalah ?
 
     **a. Adalah sekelompok tampilan yang menyejajarkan semua anak dalam satu arah, secara vertikal atau horizontal**
 
@@ -1225,7 +1437,7 @@
 
     d. Semua salah
 
-71. ScrollView digunakan pada saat?
+83. ScrollView digunakan pada saat?
 
     **a.  Digunakan pada saat konten pada layar aplikasi harus di Scroll secara vertikal**
 
@@ -1235,7 +1447,7 @@
 
     d. A dan B benar
 
-72. Agar lebar atribut sesuai dengan lebar dari perangkat ?
+84. Agar lebar atribut sesuai dengan lebar dari perangkat ?
     
     **a. android:layout_width="match_parent"**
 
@@ -1245,7 +1457,7 @@
 
     d. android:layout_width="parent_match"
  
-73. Agar lebar atribut sesuai dengan tinggi dari perangkat ?
+85. Agar lebar atribut sesuai dengan tinggi dari perangkat ?
     
     **a. android:layout_height="match_parent"**
 
@@ -1257,7 +1469,7 @@
 
 ##  History Fragment (UI) - 02
 
-74. CardView digunakan untuk ?
+86. CardView digunakan untuk ?
 
     **a. Sebagai wrapper atau frame layout yang akan membungkus layout di dalamnya dengan desain menyerupai kartu**
 
@@ -1267,7 +1479,7 @@
 
     d. komponen untuk menampilkan informasi dalam bentuk grid
 
-75. Digunakan untuk apa properti CardElevation ?
+87. Digunakan untuk apa properti CardElevation ?
 
     **a. Dipakai untuk menentukan ukuran dan kehalusan dari shadow sealami mungkin**
 
@@ -1277,7 +1489,7 @@
 
     d. Semua salah
 
-76. android:width="1dp", yang dimaksud dengan dp adalah ?
+88. android:width="1dp", yang dimaksud dengan dp adalah ?
 
     a. Depend-independent Pixels
  
@@ -1287,7 +1499,7 @@
 
     d. Density-independent parts
 
-77. Menentukan warna background dari card ?
+89. Menentukan warna background dari card ?
 
     a. cardbackground
 
@@ -1297,7 +1509,7 @@
 
     d. cardcolorbackground
 
-78. Padding digunakan untuk ?
+90. Padding digunakan untuk ?
 
     **a. Mempertebal atau memperlapis sebuah konten View**
 
@@ -1309,7 +1521,7 @@
 
 ## Profile Fragment (UI)
 
-79. Textview adalah ?
+91. Textview adalah ?
 
     **a. adalah elemen yang berfungsi untuk menampilkan output berupa text**
 
@@ -1319,7 +1531,7 @@
 
     d. komponen untuk menampilkan informasi dalam bentuk grid
 
-80. Agar background Appbar menjadi transparan ?
+92. Agar background Appbar menjadi transparan ?
 
     a. android:background="@android:color=transparent
 
@@ -1329,7 +1541,7 @@
 
     **d. android:background="@android:color/transparent"**
 
-81. Apa itu nested layout ?
+92. Apa itu nested layout ?
 
     **a. Nested layout adalah kondisi di mana sebuah parent layout yang memiliki parent layout lagi di dalamnya**
 
@@ -1339,7 +1551,7 @@
 
     d. Nested layout adalah kondisi di mana sebuah parent layout yang memiliki coonstraint layout lagi di dalamnya
 
-82. Menetapkan arah tata letak secara Vertical ?
+93. Menetapkan arah tata letak secara Vertical ?
 
     a. android:orientation="Horizontal"
 
@@ -1349,7 +1561,7 @@
 
     **d. android:orientation="Vertical"**
 
-83. ImageView adalah ?
+94. ImageView adalah ?
 
     **a. Komponen untuk menampilkan gambar**
 
@@ -1361,7 +1573,7 @@
 
 ## Change Password Activity (UI)
 
-84. Untuk menulis kode program untuk membuat aplikasi Android di file ?
+95. Untuk menulis kode program untuk membuat aplikasi Android di file ?
 
     a. File Exe
 
@@ -1371,7 +1583,7 @@
 
     **d. file Xml**
 
-85. Berikut ini merupakan karakteristik bahasa pemrograman Android adalah ?
+96. Berikut ini merupakan karakteristik bahasa pemrograman Android adalah ?
     a. Tidak memiliki library sendiri
 
     b. Pemrograman tidak berorientasi objek
@@ -1380,7 +1592,7 @@
 
     d. Semua benar
 
-86. Jika kita ingin membuat tombol, perlu menggunakan tag ?
+97. Jika kita ingin membuat tombol, perlu menggunakan tag ?
 ```
     a. <Image>
 
@@ -1391,7 +1603,7 @@
     d. <Text>
 ```
 
-87. Kegunaan dari @+id/ ?
+98. Kegunaan dari @+id/ ?
 
     **a. Digunakan saat akan memberikan sebuah id pada elemen atau tag dari layout XML untuk membedakan kegunaan masing-masing elemen atau tag**
 
@@ -1401,7 +1613,7 @@
 
     d. A dan B benar
 
-88. Jenis metode inputan untuk password ?
+99. Jenis metode inputan untuk password ?
     
    **a. textPassword**
 
@@ -1413,7 +1625,7 @@
 
 ## Menggabung Seluruh Halaman & Debug
 
-89. Fungsi dari postDelayed() adalah ?
+100. Fungsi dari postDelayed() adalah ?
 
    **a. Memberikan waktu jeda sebelum eksekusi**
 
@@ -1423,7 +1635,7 @@
 
     d. Memberikan waktu jeda selama satu jam
 
-90. Penulisan untuk implementasi librari Anko ?
+101. Penulisan untuk implementasi librari Anko ?
 
     a. intent "org.jetbrains.anko:anko-commons:0.10.8"
 
@@ -1433,7 +1645,7 @@
 
     **d. implementation "org.jetbrains.anko:anko-commons:0.10.8"**
 
-91. Fungsi onClick() ?
+102. Fungsi onClick() ?
 
     **a. Memberikan aksi ketika tombol disentuh**
 
@@ -1443,7 +1655,7 @@
 
     d. Menjalankan Localhost
 
-92. ImageButton digunakan untuk ?
+103. ImageButton digunakan untuk ?
 
     **a. Adalah suatu tombol dengan tampilan sebuah gambar atau image**
 
