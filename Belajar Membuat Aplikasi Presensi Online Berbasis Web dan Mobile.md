@@ -1593,15 +1593,14 @@
     d. Semua benar
 
 97. Jika kita ingin membuat tombol, perlu menggunakan tag ?
-```
-    a. <Image>
+
+   a. <Image>
 
     b. <View>
 
     **c. <Button>**
 
     d. <Text>
-```
 
 98. Kegunaan dari @+id/ ?
 
@@ -1617,11 +1616,11 @@
     
    **a. textPassword**
 
-    b. textView
+   b. textView
 
-    c. textMail
+   c. textMail
  
-    d. textButton
+   d. textButton
 
 ## Menggabung Seluruh Halaman & Debug
 
@@ -1629,38 +1628,81 @@
 
    **a. Memberikan waktu jeda sebelum eksekusi**
 
-    b. Langsung eksekusi tanpa waktu jeda untuk eksekusi
+   b. Langsung eksekusi tanpa waktu jeda untuk eksekusi
 
-    c. Tidak memberikan efek apa-apa
+   c. Tidak memberikan efek apa-apa
 
-    d. Memberikan waktu jeda selama satu jam
+   d. Memberikan waktu jeda selama satu jam
 
 101. Penulisan untuk implementasi librari Anko ?
 
-    a. intent "org.jetbrains.anko:anko-commons:0.10.8"
+   a. intent "org.jetbrains.anko:anko-commons:0.10.8"
 
-    b. implement "org.jetbrains.anko:anko-commons:0.10.8"
+   b. implement "org.jetbrains.anko:anko-commons:0.10.8"
 
-    c. implementasi "org.jetbrains.anko:anko-commons:0.10.8"
+   c. implementasi "org.jetbrains.anko:anko-commons:0.10.8"
 
-    **d. implementation "org.jetbrains.anko:anko-commons:0.10.8"**
+   **d. implementation "org.jetbrains.anko:anko-commons:0.10.8"**
 
 102. Fungsi onClick() ?
 
-    **a. Memberikan aksi ketika tombol disentuh**
+   **a. Memberikan aksi ketika tombol disentuh**
 
-    b. Memberikan efek visual
+   b. Memberikan efek visual
 
-    c. Menjalankan aplikasi 
+   c. Menjalankan aplikasi 
 
-    d. Menjalankan Localhost
+   d. Menjalankan Localhost
 
 103. ImageButton digunakan untuk ?
 
-    **a. Adalah suatu tombol dengan tampilan sebuah gambar atau image**
+   **a. Adalah suatu tombol dengan tampilan sebuah gambar atau image**
 
-    b.  Adalah suatu tombol dengan tampilan sebuah text atau tulisan
+   b.  Adalah suatu tombol dengan tampilan sebuah text atau tulisan
 
-    c.  Adalah suatu tombol dengan tampilan sebuah tulisan dengan gaya password
+   c.  Adalah suatu tombol dengan tampilan sebuah tulisan dengan gaya password
 
-    d.  Semua salah
+   d.  Semua salah
+
+## Cek Sudah Login di Splash Activity
+
+104. Difolder manakah kita dapat melihat login ?
+     
+     a. LoginActivity.kt
+   
+     **b. HawkStorage.kt**
+   
+     c. LoginResponse.kt
+     
+     d. LoginActivity.xml
+
+105. tipe data boolean memiliki 2 nilai, yaitu ?
+   
+      a. 1 dan 2
+   
+      b. maju atau mundur
+   
+      **c. benar atau salah**
+   
+      d. angka atau huruf
+
+106. if (isLogin){
+      
+      startActivity<MainActivity>()
+      
+      finishAffinity()  
+   
+      kondisi diatas adalah ketika ?
+   
+      a. ketika belum login
+   
+      b. ketika sudah daftar akun
+   
+      c. ketika belum punya akun
+   
+      **d. ketika sudah login maka akan diarahkan ke mainActivity**
+
+## Forgot Password Activity
+   
+107.    
+   
