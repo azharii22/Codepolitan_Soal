@@ -1865,3 +1865,161 @@
      c. menghapus lokasi
    
      d. mendeteksi lokasi
+
+112. jika GPS sudah aktif, maka kita dapat mengeceknya menggunakan GPS ataupun internet.
+   
+     dari logika diatas, penulisan source code nya adalah ?
+   
+     **a. private fun isLocationEnabled(): Boolean {
+         
+         if (locationManager?.isProviderEnabled(LocationManager.GPS_PROVIDER)!! ||
+         
+         locationManager?.isProviderEnabled(LocationManager.NETWORK_PROVIDER)!!){
+         
+         return true
+         
+         }**
+   
+        b. private fun isLocationDisabled(): Boolean {
+         
+           if (locationManager?.isProviderEnabled(LocationManager.GPS_PROVIDER)!! ||
+         
+           locationManager?.isProviderEnabled(LocationManager.NETWORK_PROVIDER)!!){
+         
+           return true
+         
+           }
+   
+        c. private fun isLocationEnabled(): Boolean {
+         
+           if (locationManager?.isProviderEnabled(LocationManager.GPS)!! ||
+         
+           locationManager?.isProviderEnabled(LocationManager.NETWORK)!!){
+         
+           return true
+         
+            }
+   
+         d. private fun isLocationDisabled(): Boolean {
+         
+            if (locationManager?.isProviderEnabled(LocationManager.GPS_PROVIDER)!! ||
+         
+            }else{
+   
+            locationManager?.isProviderEnabled(LocationManager.NETWORK_PROVIDER)!!){
+         
+            return true
+         
+            }
+
+## Mendapatkan Lokasi Saat Ini   
+   
+113. fusedLocationProviderClient berfungsi untuk ?
+   
+     a. mendapatkan lokasi tujuan
+   
+     b. mendapatkan lokasi temen
+   
+     **c. mencari lokasi saat ini**
+   
+      d. menghilangkan lokasi saat ini
+
+114. apa yang terjadi jika source code dibawah ini dihilangkan ?
+   
+     if (isLocationEnabled()){
+     
+     map?.isMyLocationEnabled = true
+     
+     map?.uiSettings?.isMyLocationButtonEnabled = false
+   
+     a. lokasi error tidak berfungsi
+   
+     **b. terus mencari lokasi terakhir**
+   
+     c. menghilangkan lokasi terakhir
+   
+     d. lokasi terakhir yang dikunjungi tidak aktif
+
+115. lokasi saat ini disebut juga dengan ?
+   
+     a. LocationNow
+   
+     b. LocationRequest
+   
+     c. LocationManager
+   
+     **d. CurrentLocation**
+
+## Cek Jika Sudah Absen   
+   
+116. penulisan source code agar absen hanya dapat diisi sekali dalam 1 hari adalah ?
+   
+     a. if (histories[1]?.status == 1){
+        
+        isCheckIn = false
+        
+        checkIsCheckIn()
+        
+        bindingBottomSheet?.btnCheckIn?.isEnabled = false
+        
+        bindingBottomSheet?.btnCheckIn?.text = getString(R.string.your_already_present)
+        
+        }
+   
+     b. if (histories[1]?.status == 2){
+        
+        isCheckIn = false
+        
+        checkIsCheckIn()
+        
+        bindingBottomSheet?.btnCheckIn?.isEnabled = false
+        
+        bindingBottomSheet?.btnCheckIn?.text = getString(R.string.your_already_present)
+        
+        }
+   
+     c. if (histories[0]?.status == 1){
+        
+        isCheckIn = false
+        
+        checkIsCheckIn()
+        
+        bindingBottomSheet?.btnCheckIn?.isEnabled = false
+        
+        bindingBottomSheet?.btnCheckIn?.text = getString(R.string.your_already_present)
+        
+        }
+   
+     d. if (histories[0]?.status == 0){
+        
+        isCheckIn = false
+        
+        checkIsCheckIn()
+        
+        bindingBottomSheet?.btnCheckIn?.isEnabled = false
+        
+        bindingBottomSheet?.btnCheckIn?.text = getString(R.string.your_already_present)
+        
+        }
+
+## Open Camera dan Simpan File Gambar
+   
+117. kondisi dimana kita harus mengizinkan kamera untuk melakukan foto
+   
+     source code dari logika diatas adalah ?
+   
+     **a. if (checkPermissionCamera()){
+        
+         openCamera()**
+   
+      b. if (PermissionCamera()){
+        
+         openCamera()
+   
+      c. if (checkCamera()){
+        
+         openPermission()
+   
+      d. if (PermissionCheckCamera()){
+        
+         openCheck()
