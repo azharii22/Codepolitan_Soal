@@ -2023,3 +2023,29 @@
       d. if (PermissionCheckCamera()){
         
          openCheck()
+
+118. startActivityForResult(cameraIntent, REQUEST_CODE_IMAGE_CAPTURE)
+   
+     maksud dari source code diatas adalah ?
+   
+     a. untuk menutup kamera
+   
+     **b. untuk membuka kamera**
+   
+     c. untuk mengganti kamera menggunakan go pro
+   
+     d. mengganti mode foto menjadi mode video
+
+119. startActivityForResult(cameraIntent, REQUEST_CODE_IMAGE_CAPTURE)
+   
+     kelemahan dari source code di atas adalah ?
+   
+     a.kualitas yang dihasilkan kurang maksimal
+   
+     b. pada saat pengambilan gambar tidak dapat melakukan zoom in zoom out
+   
+     **c. gambar yang difoto tidak tersimpan dalam storage**
+   
+     d. tidak dapat menggunakan mode video
+
+120.    
