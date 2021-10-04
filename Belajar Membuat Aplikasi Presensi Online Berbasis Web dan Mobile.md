@@ -1704,5 +1704,146 @@
 
 ## Forgot Password Activity
    
-107.    
+107. git checkout digunakan untuk ?
    
+     a. membuat file baru
+   
+     **b. mengecek kondisi file di setiap commit**
+   
+     c. menghapus file yang sudah ada
+   
+     d. membuat repository baru
+   
+108. private fun isFormValid(email: String): Boolean {
+     
+     if (email.isEmpty()){
+     
+     binding.etEmailForgotPassword.error = getString(R.string.please_field_your_email)
+     
+     binding.etEmailForgotPassword.requestFocus()   
+   
+     penggalan source code diatas menggambarkan suatu kondisi yaitu ?
+   
+     a. ketika email yang diisi salah
+   
+     b. ketika email yang diisi benar
+   
+     **c. ketika form email ada yang tidak terisi**
+   
+     d. ketika lupa email
+
+109. source code untuk menampilkan pesan ketika email yang diinput salah yaitu ?
+   
+     **a. MyDialog.dynamicDialog(**
+        
+        **this@ForgotPasswordActivity,**
+        
+        **getString(R.string.failed),**
+        
+        **errorResponse?.message.toString()**
+   
+      b. MyDialog.dynamicDialog(
+         
+         this@ForgotPasswordActivity,
+         
+         getString(R.string.success),
+         
+         errorResponse?.message.toString()
+   
+      c. MyDialog.dynamicDialog(
+         
+         this@ForgotPasswordActivity,
+         
+         getString(R.string.failed),
+         
+         response?.message.toString()
+   
+      d. MyDialog.dynamicDialog(
+         
+         this@ForgotPasswordActivity,
+         
+         getString(R.string.failed),
+         
+         Response.message.toString()
+
+110. source code untuk menampilkan pesan ketika email yang diinput benar yaitu ?
+   
+     a. {
+        
+         MyDialog.hideDialog()
+         
+         if (response.isSuccessful){
+         
+         val message = response.body()?.message
+         
+         MyDialog.dynamicDialog(
+         
+         this@ForgotPasswordActivity,
+         
+         getString(R.string.success),
+         
+         message.toString()
+         
+         )
+         
+         }
+   
+      b. {
+       
+         MyDialog.dynamicDialog(
+         
+         this@ForgotPasswordActivity,
+         
+         getString(R.string.success),
+         
+         message.toString()
+         
+         )
+         
+         Handler(Looper.getMainLooper()).postDelayed({
+         
+         MyDialog.hideDialog()
+         
+         finish()
+         
+         },2000)
+   
+      c. {
+        
+         MyDialog.hideDialog()
+         
+         if (response.isSuccessful){
+         
+         val message = response.body()?.message
+         
+         MyDialog.dynamicDialog(
+         
+         this@ForgotPasswordActivity,
+         
+         message.toString()
+   
+      **d**. {
+        
+         MyDialog.hideDialog()
+         
+         if (response.isSuccessful){
+         
+         val message = response.body()?.message
+         
+         MyDialog.dynamicDialog(
+         
+         this@ForgotPasswordActivity,
+         
+         getString(R.string.success),
+         
+         message.toString()
+         
+         )
+         
+         Handler(Looper.getMainLooper()).postDelayed({
+         
+         MyDialog.hideDialog()
+         
+         finish()
+         
+         },2000)
