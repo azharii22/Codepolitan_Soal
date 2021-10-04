@@ -1847,3 +1847,21 @@
          finish()
          
          },2000)
+
+## Cek GPS Aktif atau Tidak
+   
+111. locationRequest = LocationRequest()
+     
+     .setInterval(10000)
+     
+     .setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY)   
+   
+     source code diatas digunakan untuk ?
+   
+     a. mencari lokasi
+   
+     **b. setup lokasi**
+   
+     c. menghapus lokasi
+   
+     d. mendeteksi lokasi
