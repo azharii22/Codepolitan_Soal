@@ -2048,4 +2048,8 @@
    
      d. tidak dapat menggunakan mode video
 
-120.    
+120. Apakah gambar tetap terkirim ketika kita tidak menyediakan storage saat mengambil gambar ?
+   
+     a. Bisa
+   
+     **b. Tidak Bisa**
